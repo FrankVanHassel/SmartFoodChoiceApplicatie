@@ -25,13 +25,12 @@
                 <ImageBrush ImageSource="kip.png"/>
             </Button.Background>
         </Button>
-        <Label Content="Kip" HorizontalAlignment="Center" Margin="321,225,652,271" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" Height="28" Width="37" FontSize="14" RenderTransformOrigin="1,1.893"/>
         <Button Content="" HorizontalAlignment="Left" Height="80" Margin="400,140,0,0" VerticalAlignment="Top" Width="80">
             <Button.Background>
                 <ImageBrush ImageSource="steak-3171790_1280.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Label Content="Biefstuk" HorizontalAlignment="Center" Margin="409,225,530,271" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" Height="28" Width="71" FontSize="14" RenderTransformOrigin="1,1.893"/>
+        <Label Content="hallo" HorizontalAlignment="Center" Margin="409,225,530,271" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" Height="28" Width="71" FontSize="14" RenderTransformOrigin="1,1.893"/>
         <Button Content="" HorizontalAlignment="Left" Height="80" Margin="500,138,0,0" VerticalAlignment="Top" Width="80">
             <Button.Background>
                 <ImageBrush ImageSource="french-fries-155679_1280.png" Stretch="Uniform"/>
