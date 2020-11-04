@@ -1,0 +1,63 @@
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csprojAssemblyReference.cache
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\CMSmanager.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\login.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\MainWindow.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlCreate.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlHome.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\App.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_Content.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_MarkupCompile.cache
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_MarkupCompile.lref
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\SmartFoodChoice.mdf
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\SmartFoodChoice_log.ldf
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\SmartFoodChoiceApp.exe.config
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\SmartFoodChoiceApp.exe
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\SmartFoodChoiceApp.pdb
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignColors.dll
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\App.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\CMSmanager.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\login.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\MainWindow.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlCreate.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlHome.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.g.resources
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.Properties.Resources.resources
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.GenerateResource.cache
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.CoreCompileInputs.cache
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.CopyComplete
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.exe
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.pdb
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csprojAssemblyReference.cache
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\login.g.cs
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlCreate.g.cs
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlHome.g.cs
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\App.g.cs
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_Content.g.cs
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_MarkupCompile.cache
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_MarkupCompile.lref
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.exe
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.pdb
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\SmartFoodChoice.mdf
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\SmartFoodChoice_log.ldf
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\SmartFoodChoiceApp.exe.config
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\SmartFoodChoiceApp.exe
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\SmartFoodChoiceApp.pdb
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\MaterialDesignColors.dll
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\MaterialDesignColors.pdb
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\MainWindow.g.cs
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\App.baml
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\login.baml
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\MainWindow.baml
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlCreate.baml
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlHome.baml
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.g.resources
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.Properties.Resources.resources
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.GenerateResource.cache
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.CoreCompileInputs.cache
+D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.CopyComplete

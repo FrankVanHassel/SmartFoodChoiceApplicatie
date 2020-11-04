@@ -1,0 +1,62 @@
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\ExcellentTasteFrank.exe.config
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\ExcellentTasteFrank.exe
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\ExcellentTasteFrank.pdb
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.csprojResolveAssemblyReference.cache
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\MainWindow.g.cs
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\App.g.cs
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank_MarkupCompile.cache
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank_MarkupCompile.lref
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\App.baml
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\MainWindow.baml
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.g.resources
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.Properties.Resources.resources
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.csproj.GenerateResource.Cache
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.exe
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.pdb
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlCreate.g.cs
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlHome.g.cs
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignColors.dll
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.dll
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.pdb
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.xml
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlCreate.baml
+c:\users\frank van hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlHome.baml
+C:\Users\Frank van Hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\login.g.cs
+C:\Users\Frank van Hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank_Content.g.cs
+C:\Users\Frank van Hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\ExcellentTaste.mdf
+C:\Users\Frank van Hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\ExcellentTaste_log.ldf
+C:\Users\Frank van Hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\login.baml
+C:\Users\Frank van Hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\CMSmanager.g.cs
+C:\Users\Frank van Hassel\documents\visual studio 2017\Projects\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\CMSmanager.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\ExcellentTaste.mdf
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\ExcellentTaste_log.ldf
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\ExcellentTasteFrank.exe.config
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\ExcellentTasteFrank.exe
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\ExcellentTasteFrank.pdb
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignColors.dll
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.csprojAssemblyReference.cache
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\CMSmanager.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\login.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\MainWindow.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlCreate.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlHome.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\App.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank_Content.g.cs
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank_MarkupCompile.cache
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank_MarkupCompile.lref
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\App.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\CMSmanager.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\login.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\MainWindow.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlCreate.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\UserControlHome.baml
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.g.resources
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.Properties.Resources.resources
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.csproj.GenerateResource.cache
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.csproj.CoreCompileInputs.cache
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.csproj.CopyComplete
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.exe
+C:\Users\Frank van Hassel\Downloads\ExcellentTasteFrank\ExcellentTasteFrank\obj\Debug\ExcellentTasteFrank.pdb
