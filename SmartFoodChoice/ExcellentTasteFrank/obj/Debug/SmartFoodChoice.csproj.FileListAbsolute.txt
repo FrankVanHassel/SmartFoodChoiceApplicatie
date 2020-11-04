@@ -61,3 +61,14 @@ D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoic
 D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.GenerateResource.cache
 D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.CoreCompileInputs.cache
 D:\HBO-ICT\Proftaak\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.CopyComplete
+C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csprojAssemblyReference.cache
+C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\login.g.cs
+C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\MainWindow.g.cs
+C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlCreate.g.cs
+C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlHome.g.cs
+C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\App.g.cs
+C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_Content.g.cs
+C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_MarkupCompile.cache
+C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_MarkupCompile.lref
+C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.exe
+C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.pdb

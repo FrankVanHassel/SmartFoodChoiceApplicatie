@@ -30,34 +30,41 @@
                 <ImageBrush ImageSource="steak-3171790_1280.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Label Content="hallo" HorizontalAlignment="Center" Margin="409,225,530,271" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" Height="28" Width="71" FontSize="14" RenderTransformOrigin="1,1.893"/>
         <Button Content="" HorizontalAlignment="Left" Height="80" Margin="500,138,0,0" VerticalAlignment="Top" Width="80">
             <Button.Background>
                 <ImageBrush ImageSource="french-fries-155679_1280.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Label Content="Friet" HorizontalAlignment="Center" Margin="518,225,445,271" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" Height="28" Width="47" FontSize="14" RenderTransformOrigin="1,1.893"/>
         <Button Content="" HorizontalAlignment="Left" Height="80" Margin="600,138,0,0" VerticalAlignment="Top" Width="80">
             <Button.Background>
                 <ImageBrush ImageSource="donut.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Label Content="Donut" HorizontalAlignment="Center" Margin="618,225,340,271" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" Height="28" Width="52" FontSize="14" RenderTransformOrigin="1,1.893"/>
         <Button Content="" HorizontalAlignment="Left" Height="80" Margin="700,138,0,0" VerticalAlignment="Top" Width="80">
             <Button.Background>
                 <ImageBrush ImageSource="brocolli.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Label Content="Brocolli" HorizontalAlignment="Center" Margin="714,223,230,273" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" Height="28" Width="66" FontSize="14" RenderTransformOrigin="1,1.893"/>
         <Button Content="" HorizontalAlignment="Left" Height="80" Margin="800,138,0,0" VerticalAlignment="Top" Width="80">
             <Button.Background>
                 <ImageBrush ImageSource="salad.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Label Content="salade" HorizontalAlignment="Center" Margin="800,225,144,271" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" Height="28" Width="66" FontSize="14" RenderTransformOrigin="1,1.893"/>
-        <RadioButton Content="Vega Burger" HorizontalAlignment="Left" Height="30" Margin="185,225,0,0" VerticalAlignment="Top" Width="116" ClickMode="Press" x:Name="RBMetLines_Copy"
-            Checked="RBMetLines_Checked" FontFamily="Arial" FontSize="16"/>
-        <RadioButton Content="Burger" HorizontalAlignment="Left" Height="30" Margin="99,223,0,0" VerticalAlignment="Top" Width="81" ClickMode="Press" x:Name="RBMetLines"
-             Checked="RBMetLines_Checked" FontFamily="Arial" FontSize="16" />
+        <RadioButton Content="Vega Burger" HorizontalAlignment="Left" Height="30" Margin="185,225,0,0" VerticalAlignment="Top" Width="116" ClickMode="Press" x:Name="RBVega"
+            Checked="RBVega_Checked" FontFamily="Arial" FontSize="16"/>
+        <RadioButton Content="Burger" HorizontalAlignment="Left" Height="30" Margin="99,223,0,0" VerticalAlignment="Top" Width="81" ClickMode="Press" x:Name="RBBurger"
+             Checked="RBBurger_Checked" FontFamily="Arial" FontSize="16" />
+        <RadioButton Content="Kip" HorizontalAlignment="Left" Height="30" Margin="300,225,0,0" VerticalAlignment="Top" Width="63" ClickMode="Press" x:Name="RBMetLines_Copy1"
+            Checked="RBMetLines_Checked" FontFamily="Arial" FontSize="16" />
+        <RadioButton Content="Biefstuk" HorizontalAlignment="Left" Height="30" Margin="400,225,0,0" VerticalAlignment="Top" Width="81" ClickMode="Press" x:Name="RBMetLines_Copy2"
+            Checked="RBMetLines_Checked" FontFamily="Arial" FontSize="16" />
+        <RadioButton Content="Friet" HorizontalAlignment="Left" Height="30" Margin="500,223,0,0" VerticalAlignment="Top" Width="81" ClickMode="Press" x:Name="RBMetLines_Copy3"
+            Checked="RBMetLines_Checked" FontFamily="Arial" FontSize="16" />
+        <RadioButton Content="Donut" HorizontalAlignment="Left" Height="30" Margin="599,225,0,0" VerticalAlignment="Top" Width="81" ClickMode="Press" x:Name="RBMetLines_Copy4"
+            Checked="RBMetLines_Checked" FontFamily="Arial" FontSize="16" />
+        <RadioButton Content="Brocolli" HorizontalAlignment="Left" Height="30" Margin="699,223,0,0" VerticalAlignment="Top" Width="81" ClickMode="Press" x:Name="RBMetLines_Copy5"
+            Checked="RBMetLines_Checked" FontFamily="Arial" FontSize="16" />
+        <RadioButton Content="Salade" HorizontalAlignment="Left" Height="30" Margin="799,225,0,0" VerticalAlignment="Top" Width="81" ClickMode="Press" x:Name="RBMetLines_Copy6"
+            Checked="RBMetLines_Checked" FontFamily="Arial" FontSize="16" />
     </Grid>
 </UserControl>
