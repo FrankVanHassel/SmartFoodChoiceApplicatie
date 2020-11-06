@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:ExcellentTasteFrank"
              mc:Ignorable="d" 
              Background="Aquamarine">
-    <Grid>
+    <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="White" RenderTransformOrigin="0.511,0.519">
 
     </Grid>
 </UserControl>

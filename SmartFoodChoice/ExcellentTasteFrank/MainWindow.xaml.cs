@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SmartFoodChoiceApp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace ExcellentTasteFrank
 {
@@ -51,12 +53,11 @@ namespace ExcellentTasteFrank
                     usc = new UserControlCreate();
                     GridMain.Children.Add(usc);
                     break;
-                case "SmileyHappy":
-                    usc = new UserControlCreate();
+                case "Overzicht":
+                    usc = new UserControlOverzicht();
                     GridMain.Children.Add(usc);
                     break;
-                default:
-                    break;
+
             }
         }
 

@@ -14,6 +14,9 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -28,8 +31,6 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -89,6 +90,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="login.xaml.cs">
       <DependentUpon>login.xaml</DependentUpon>
     </Compile>
@@ -97,6 +106,9 @@
     </Compile>
     <Compile Include="UserControlHome.xaml.cs">
       <DependentUpon>UserControlHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlOverzicht.xaml.cs">
+      <DependentUpon>UserControlOverzicht.xaml</DependentUpon>
     </Compile>
     <Page Include="login.xaml">
       <SubType>Designer</SubType>
@@ -119,6 +131,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControlHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlOverzicht.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -149,6 +165,17 @@
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,6 +186,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="snicker.png" />
+    <Resource Include="twix-bar1.jpg" />
+    <Resource Include="tomaat.png" />
+    <Resource Include="sushi.png" />
     <Resource Include="steak-3171790_1280.png" />
     <Resource Include="vegaburger.jpg" />
     <Resource Include="Images\smartfoodchoice.png" />
@@ -170,6 +201,18 @@
     <Resource Include="french-fries-155679_1280.png" />
     <Resource Include="brocolli.png" />
     <Resource Include="salad.png" />
+    <Resource Include="NewFile1.txt" />
+    <Resource Include="How-to-draw-a-pizza.jpg" />
+    <Resource Include="how-to-draw-a-banana-0.png" />
+    <Resource Include="lasagne.jpg" />
+    <Resource Include="kiwi.png" />
+    <Resource Include="61c22661bef5b5358c9b8fa4049947aa.png" />
+    <Resource Include="paprika.png" />
+    <Resource Include="cookie-dough-landing-open.png" />
+    <Resource Include="garnalen.jpg" />
+    <Resource Include="61fZ+YAYGaL._SX679_.jpg" />
+    <Resource Include="pizzaa.jpg" />
+    <Resource Include="piza.jpg" />
     <Content Include="SmartFoodChoice.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

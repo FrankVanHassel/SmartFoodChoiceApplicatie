@@ -38,9 +38,6 @@
                 <TextBlock Text="User" VerticalAlignment="Center" FontSize="16"/>
                 <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" StaysOpen="True" Margin="10">
                     <StackPanel Width="150">
-                        <Button Content="Settings"/>
-                        <Button Content="Account"/>
-                        <Button Content="Help"/>
                         <Separator/>
                         <Button Content="Logout" Click="Logoutclick"/>
                     </StackPanel>
@@ -75,24 +72,24 @@
                     <ListViewItem x:Name="ItemHome" Height="60">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="Home" Height="25" Width="36" Margin="10" Foreground="White"/>
-                            <TextBlock Text="Home" VerticalAlignment="Center" Margin="20 10" Foreground="#FFFFFFFF"/>
+                            <TextBlock Text="Home" VerticalAlignment="Center" Margin="5 10" Foreground="#FFFFFFFF"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem x:Name="ItemCreate" Height="60">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="PencilBox" Height="25" Width="36" Margin="10" Foreground="White"/>
-                            <TextBlock Text="Create" VerticalAlignment="Center" Margin="20 10" Foreground="#FFFFFFFF"/>
+                            <TextBlock Text="Maak je lijstje" VerticalAlignment="Center" Margin="5 10" Foreground="#FFFFFFFF"/>
                         </StackPanel>
                     </ListViewItem>
-                    <ListViewItem Height="60">
+                    <ListViewItem  x:Name="Overzicht" Height="60">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="SmileyHappy" Height="25" Width="36" Margin="10" Foreground="White"/>
-                            <TextBlock Text="Tickets" VerticalAlignment="Center"  Margin="20 10" Foreground="#FFFFFFFF"/>
+                            <TextBlock Text="Overzicht" VerticalAlignment="Center"  Margin="5 10" Foreground="#FFFFFFFF"/>
                         </StackPanel>
                     </ListViewItem>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Grade" Height="25" Width="36" Margin="10" Foreground="White"/>
-                        <TextBlock Text="Messages" VerticalAlignment="Center"  Margin="20 10" Foreground="#FFFFFFFF"/>
+                        <TextBlock Text="Favorieten Producten" VerticalAlignment="Center"  Margin="5 10" Foreground="#FFFFFFFF"/>
                     </StackPanel>
                     <ListViewItem Height="60"/>
                 </ListView>

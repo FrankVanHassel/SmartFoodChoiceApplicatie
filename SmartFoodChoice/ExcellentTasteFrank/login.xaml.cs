@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
 using System.Data;
+using SmartFoodChoiceApp;
 
 namespace ExcellentTasteFrank
 {
@@ -44,7 +45,7 @@ namespace ExcellentTasteFrank
                 int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
                 if (count == 1)
                 {
-                    MessageBox.Show("Welkom L.Verhoeven! (Admin)");
+                    MessageBox.Show("Welkom Gebruiker");
                     MainWindow gebruiker = new MainWindow();
                     gebruiker.Show();
                     this.Close();

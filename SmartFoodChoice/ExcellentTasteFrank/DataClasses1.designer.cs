@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ExcellentTasteFrank
+namespace SmartFoodChoiceApp
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -22,7 +22,7 @@ namespace ExcellentTasteFrank
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="ExcellentTaste")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="SmartFoodChoice")]
 	public partial class DataClasses1DataContext : System.Data.Linq.DataContext
 	{
 		
@@ -33,6 +33,9 @@ namespace ExcellentTasteFrank
     partial void Inserttbl_Login(tbl_Login instance);
     partial void Updatetbl_Login(tbl_Login instance);
     partial void Deletetbl_Login(tbl_Login instance);
+    partial void Inserttbl_Overzicht(tbl_Overzicht instance);
+    partial void Updatetbl_Overzicht(tbl_Overzicht instance);
+    partial void Deletetbl_Overzicht(tbl_Overzicht instance);
     #endregion
 		
 		public DataClasses1DataContext() : 
@@ -70,6 +73,14 @@ namespace ExcellentTasteFrank
 			get
 			{
 				return this.GetTable<tbl_Login>();
+			}
+		}
+		
+		public System.Data.Linq.Table<tbl_Overzicht> tbl_Overzichts
+		{
+			get
+			{
+				return this.GetTable<tbl_Overzicht>();
 			}
 		}
 	}
@@ -183,6 +194,164 @@ namespace ExcellentTasteFrank
 					this._Recht = value;
 					this.SendPropertyChanged("Recht");
 					this.OnRechtChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_Overzicht")]
+	public partial class tbl_Overzicht : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Product_ID;
+		
+		private string _Smiley;
+		
+		private System.Nullable<System.DateTime> _Datum_en_Tijd;
+		
+		private string _Productnaam;
+		
+		private string _CO_2_uitstoot;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnProduct_IDChanging(int value);
+    partial void OnProduct_IDChanged();
+    partial void OnSmileyChanging(string value);
+    partial void OnSmileyChanged();
+    partial void OnDatum_en_TijdChanging(System.Nullable<System.DateTime> value);
+    partial void OnDatum_en_TijdChanged();
+    partial void OnProductnaamChanging(string value);
+    partial void OnProductnaamChanged();
+    partial void OnCO_2_uitstootChanging(string value);
+    partial void OnCO_2_uitstootChanged();
+    #endregion
+		
+		public tbl_Overzicht()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Product_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Product_ID
+		{
+			get
+			{
+				return this._Product_ID;
+			}
+			set
+			{
+				if ((this._Product_ID != value))
+				{
+					this.OnProduct_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Product_ID = value;
+					this.SendPropertyChanged("Product_ID");
+					this.OnProduct_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Smiley", DbType="NChar(10) NOT NULL", CanBeNull=false)]
+		public string Smiley
+		{
+			get
+			{
+				return this._Smiley;
+			}
+			set
+			{
+				if ((this._Smiley != value))
+				{
+					this.OnSmileyChanging(value);
+					this.SendPropertyChanging();
+					this._Smiley = value;
+					this.SendPropertyChanged("Smiley");
+					this.OnSmileyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Datum en Tijd]", Storage="_Datum_en_Tijd", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Datum_en_Tijd
+		{
+			get
+			{
+				return this._Datum_en_Tijd;
+			}
+			set
+			{
+				if ((this._Datum_en_Tijd != value))
+				{
+					this.OnDatum_en_TijdChanging(value);
+					this.SendPropertyChanging();
+					this._Datum_en_Tijd = value;
+					this.SendPropertyChanged("Datum_en_Tijd");
+					this.OnDatum_en_TijdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Productnaam", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string Productnaam
+		{
+			get
+			{
+				return this._Productnaam;
+			}
+			set
+			{
+				if ((this._Productnaam != value))
+				{
+					this.OnProductnaamChanging(value);
+					this.SendPropertyChanging();
+					this._Productnaam = value;
+					this.SendPropertyChanged("Productnaam");
+					this.OnProductnaamChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[CO-2 uitstoot]", Storage="_CO_2_uitstoot", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string CO_2_uitstoot
+		{
+			get
+			{
+				return this._CO_2_uitstoot;
+			}
+			set
+			{
+				if ((this._CO_2_uitstoot != value))
+				{
+					this.OnCO_2_uitstootChanging(value);
+					this.SendPropertyChanging();
+					this._CO_2_uitstoot = value;
+					this.SendPropertyChanged("CO_2_uitstoot");
+					this.OnCO_2_uitstootChanged();
 				}
 			}
 		}
