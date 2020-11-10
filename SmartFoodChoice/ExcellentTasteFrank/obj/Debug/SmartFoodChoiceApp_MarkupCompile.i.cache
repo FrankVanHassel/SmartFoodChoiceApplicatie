@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\App.xaml
-51381606665
+5-1655469163
 2248922942
-131148569710
+131381959313
 161541214040
-login.xaml;MainWindow.xaml;UserControlCreate.xaml;UserControlHome.xaml;UserControlOverzicht.xaml;
+login.xaml;MainWindow.xaml;UserControlCreate.xaml;UserControlFavoriet.xaml;UserControlOverzicht.xaml;
 
 False
 

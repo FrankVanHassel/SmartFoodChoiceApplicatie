@@ -142,7 +142,7 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tbl_Login" msprop:Generator_TableClassName="tbl_LoginDataTable" msprop:Generator_TableVarName="tabletbl_Login" msprop:Generator_RowChangedName="tbl_LoginRowChanged" msprop:Generator_TablePropName="tbl_Login" msprop:Generator_RowDeletingName="tbl_LoginRowDeleting" msprop:Generator_RowChangingName="tbl_LoginRowChanging" msprop:Generator_RowEvHandlerName="tbl_LoginRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_LoginRowDeleted" msprop:Generator_RowClassName="tbl_LoginRow" msprop:Generator_UserTableName="tbl_Login" msprop:Generator_RowEvArgName="tbl_LoginRowChangeEvent">
+        <xs:element name="tbl_Login" msprop:Generator_TableClassName="tbl_LoginDataTable" msprop:Generator_TableVarName="tabletbl_Login" msprop:Generator_TablePropName="tbl_Login" msprop:Generator_RowDeletingName="tbl_LoginRowDeleting" msprop:Generator_RowChangingName="tbl_LoginRowChanging" msprop:Generator_RowEvHandlerName="tbl_LoginRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_LoginRowDeleted" msprop:Generator_UserTableName="tbl_Login" msprop:Generator_RowChangedName="tbl_LoginRowChanged" msprop:Generator_RowEvArgName="tbl_LoginRowChangeEvent" msprop:Generator_RowClassName="tbl_LoginRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" msprop:Generator_UserColumnName="UserID" type="xs:int" />
@@ -170,7 +170,7 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_Overzicht" msprop:Generator_TableClassName="tbl_OverzichtDataTable" msprop:Generator_TableVarName="tabletbl_Overzicht" msprop:Generator_RowChangedName="tbl_OverzichtRowChanged" msprop:Generator_TablePropName="tbl_Overzicht" msprop:Generator_RowDeletingName="tbl_OverzichtRowDeleting" msprop:Generator_RowChangingName="tbl_OverzichtRowChanging" msprop:Generator_RowEvHandlerName="tbl_OverzichtRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_OverzichtRowDeleted" msprop:Generator_RowClassName="tbl_OverzichtRow" msprop:Generator_UserTableName="tbl_Overzicht" msprop:Generator_RowEvArgName="tbl_OverzichtRowChangeEvent">
+        <xs:element name="tbl_Overzicht" msprop:Generator_TableClassName="tbl_OverzichtDataTable" msprop:Generator_TableVarName="tabletbl_Overzicht" msprop:Generator_TablePropName="tbl_Overzicht" msprop:Generator_RowDeletingName="tbl_OverzichtRowDeleting" msprop:Generator_RowChangingName="tbl_OverzichtRowChanging" msprop:Generator_RowEvHandlerName="tbl_OverzichtRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_OverzichtRowDeleted" msprop:Generator_UserTableName="tbl_Overzicht" msprop:Generator_RowChangedName="tbl_OverzichtRowChanged" msprop:Generator_RowEvArgName="tbl_OverzichtRowChangeEvent" msprop:Generator_RowClassName="tbl_OverzichtRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Product_ID" msprop:Generator_ColumnVarNameInTable="columnProduct_ID" msprop:Generator_ColumnPropNameInRow="Product_ID" msprop:Generator_ColumnPropNameInTable="Product_IDColumn" msprop:Generator_UserColumnName="Product_ID" type="xs:int" />
@@ -197,6 +197,10 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
                 </xs:simpleType>
               </xs:element>
             </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
           </xs:complexType>
         </xs:element>
       </xs:choice>

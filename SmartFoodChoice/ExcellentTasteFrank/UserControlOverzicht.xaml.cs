@@ -27,9 +27,7 @@ namespace SmartFoodChoiceApp
         {
             InitializeComponent();
            
-     List<tbl_Overzicht> test = new List<tbl_Overzicht>(db.tbl_Overzichts.ToList());
-            //The items are comming up in the db
-            this.dgOverzicht.ItemsSource = test;
+     
 
         }
 

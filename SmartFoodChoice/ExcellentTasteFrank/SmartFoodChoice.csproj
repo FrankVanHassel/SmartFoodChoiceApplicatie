@@ -104,8 +104,8 @@
     <Compile Include="UserControlCreate.xaml.cs">
       <DependentUpon>UserControlCreate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControlHome.xaml.cs">
-      <DependentUpon>UserControlHome.xaml</DependentUpon>
+    <Compile Include="UserControlFavoriet.xaml.cs">
+      <DependentUpon>UserControlFavoriet.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControlOverzicht.xaml.cs">
       <DependentUpon>UserControlOverzicht.xaml</DependentUpon>
@@ -130,7 +130,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControlHome.xaml">
+    <Page Include="UserControlFavoriet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,6 +186,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="steak.jpg" />
+    <Resource Include="vegburger.jpg" />
     <Resource Include="snicker.png" />
     <Resource Include="twix-bar1.jpg" />
     <Resource Include="tomaat.png" />
@@ -213,6 +215,17 @@
     <Resource Include="61fZ+YAYGaL._SX679_.jpg" />
     <Resource Include="pizzaa.jpg" />
     <Resource Include="piza.jpg" />
+    <Resource Include="kaas.jpg" />
+    <Resource Include="burger.jpg" />
+    <Resource Include="logo.jpg" />
+    <Resource Include="logo.png" />
+    <Resource Include="kiwi.jpg" />
+    <Resource Include="burgerr.jpg" />
+    <Resource Include="fries.jpg" />
+    <Resource Include="brocolli.jpg" />
+    <Resource Include="salad.jpg" />
+    <Resource Include="beef.jpg" />
+    <Resource Include="biefstuk.jpg" />
     <Content Include="SmartFoodChoice.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

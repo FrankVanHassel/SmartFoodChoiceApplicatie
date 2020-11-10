@@ -5,19 +5,127 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SmartFoodChoiceApp"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="White" RenderTransformOrigin="0.511,0.519">
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            >
+    <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="#FFDEDEDE" >
 
-        <DataGrid Name="dgOverzicht" IsReadOnly="True" AutoGenerateColumns="False" Margin="260,197,35,31" SelectionChanged="DataGrid_SelectionChanged" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Smiley" Binding="{Binding Smiley}" />
-                <DataGridTextColumn Header="Datum en tijd" Binding="{Binding Datum_Tijd, StringFormat=\{0:dd.MM.yy HH:mm:ss\}}"/>
-                <DataGridTextColumn Header="Productnaam" Binding="{Binding Productnaam.Voornaam}"/>
-                <DataGridTextColumn Header="CO-2 uitstoot" Binding="{Binding CO-2_uitstoot}"/>
-            </DataGrid.Columns>
-        </DataGrid>
+        <FlowDocumentScrollViewer Margin="163,33,68,32">
+            <FlowDocument>
+
+                <Table CellSpacing="5" Foreground="#FF040303">
+
+                    <Table.Columns>
+                        <TableColumn Width="80"/>
+                        <TableColumn Width="100"/>
+                        <TableColumn Width="350"/>
+                        <TableColumn Width="100"/>
+                    </Table.Columns>
+
+                    <TableRowGroup>
 
 
+                        <TableRow Background="#FF08CD08">
+                            <TableCell ColumnSpan="4" TextAlignment="Center">
+                                <Paragraph FontSize="24pt" FontWeight="Bold">Uw gemaakte keuzes</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow Background="#FF86EC70">
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Rating</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Datum
+                                    <LineBreak/> en tijd
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Producten</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">Aantal kilogram CO-2 uitstoot</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <materialDesign:PackIcon Kind="SmileySadOutline" Height="40" Width="40" Margin="10" Foreground="Black"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>26-9-2020
+                                    <LineBreak/> 20:15u
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Burger - Tomaat - Twix - Friet</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>43,6 kg</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph>
+                                    <materialDesign:PackIcon Kind="SmileyNeutralOutline" Height="40" Width="40" Margin="10" Foreground="Black"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>10-11-2020
+                                    <LineBreak/> 16:15u
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Snickers - Garnalen - Banaan - Salade</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>25,8 kg</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <materialDesign:PackIcon Kind="SmileySadOutline" Height="40" Width="40" Margin="10" Foreground="Black"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>3-11-2020
+                                    <LineBreak/> 10:15u
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Biefstuk - Kaas - Twix - Friet - Tomaat</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>83,9kg</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph>
+                                    <materialDesign:PackIcon Kind="SmileyHappyOutline" Height="40" Width="40" Margin="10" Foreground="Black"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>4-5-2020
+                                    <LineBreak/> 18 :15u
+                                </Paragraph>
+
+
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>VegaBurger - Brocolli - Salade - Paprika</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>9,47 kg</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
 
     </Grid>
 

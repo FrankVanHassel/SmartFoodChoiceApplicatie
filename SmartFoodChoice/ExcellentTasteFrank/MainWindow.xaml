@@ -29,7 +29,14 @@
         </EventTrigger>
     </Window.Triggers>
     <Grid Background="#FFDEDEDE">
-        <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010"/>
+        <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010">
+            <Label Content="Welkom in de SmartFoodChoice App!" HorizontalAlignment="Left" Margin="159,34,0,0" VerticalAlignment="Top" Width="676" FontFamily="Arial" FontWeight="Bold" FontSize="36" HorizontalContentAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" Margin="226,390,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="124" Width="546" Foreground="#FF271F1F" FontFamily="Arial" FontSize="20" TextDecorations="{x:Null}" TextAlignment="Center"><Run Text="In deze app kunt u aangeven wat u wilt gaan eten. "/><LineBreak/><Run Text="Als u dit heeft gedaan krijgt u te zien wat uw keuzes zijn en hoeveel CO-2 er wordt uitgestoten aan de hand van uw beslissing."/></TextBlock>
+            <Image HorizontalAlignment="Left" Height="302" Margin="285,88,0,0" VerticalAlignment="Top" Width="422" Source="logo.png"/>
+
+
+
+        </Grid>
         <Grid Height="77" VerticalAlignment="Top" Background="#FF0C131A" Margin="0,-1,0,0">
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#0c131a"/>
@@ -87,11 +94,13 @@
                             <TextBlock Text="Overzicht" VerticalAlignment="Center"  Margin="5 10" Foreground="#FFFFFFFF"/>
                         </StackPanel>
                     </ListViewItem>
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Grade" Height="25" Width="36" Margin="10" Foreground="White"/>
-                        <TextBlock Text="Favorieten Producten" VerticalAlignment="Center"  Margin="5 10" Foreground="#FFFFFFFF"/>
-                    </StackPanel>
-                    <ListViewItem Height="60"/>
+
+                    <ListViewItem x:Name="Favoriet" Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Grade" Height="25" Width="36" Margin="10" Foreground="White"/>
+                            <TextBlock Text="Favorieten Producten" VerticalAlignment="Center"  Margin="5 10" Foreground="#FFFFFFFF"/>
+                        </StackPanel>
+                    </ListViewItem>
                 </ListView>
             </StackPanel>
         </Grid>
