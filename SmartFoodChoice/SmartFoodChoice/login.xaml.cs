@@ -15,7 +15,7 @@ using System.Data.SqlClient;
 using System.Data;
 using SmartFoodChoiceApp;
 
-namespace ExcellentTasteFrank
+namespace SmartFoodChoice
 {
     /// <summary>
     /// Interaction logic for login.xaml

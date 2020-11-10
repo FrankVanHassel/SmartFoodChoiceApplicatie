@@ -15,7 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 
-namespace ExcellentTasteFrank
+namespace SmartFoodChoice
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
