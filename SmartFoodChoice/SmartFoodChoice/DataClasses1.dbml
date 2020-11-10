@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SmartFoodChoice" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\SmartFoodChoice.mdf;Integrated Security=True" SettingsObjectName="SmartFoodChoiceApp.Properties.Settings" SettingsPropertyName="ExcellentTasteConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\SmartFoodChoice.mdf;Integrated Security=True" SettingsObjectName="SmartFoodChoice.Properties.Settings" SettingsPropertyName="ExcellentTasteConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.tbl_Login" Member="tbl_Logins">
     <Type Name="tbl_Login">
       <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

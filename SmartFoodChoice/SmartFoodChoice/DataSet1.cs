@@ -1,4 +1,4 @@
-﻿namespace SmartFoodChoiceApp
+﻿namespace SmartFoodChoice
 {
 
 

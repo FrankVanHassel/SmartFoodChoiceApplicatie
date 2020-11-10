@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace SmartFoodChoiceApp {
+namespace SmartFoodChoice {
     
     
     /// <summary>
@@ -28,7 +28,11 @@ namespace SmartFoodChoiceApp {
         
         private tbl_OverzichtDataTable tabletbl_Overzicht;
         
-        private DataTable1DataTable tableDataTable1;
+        private tbl_MappingDataTable tabletbl_Mapping;
+        
+        private global::System.Data.DataRelation relationtbl_Mapping_tbl_Overzicht;
+        
+        private global::System.Data.DataRelation relationtbl_Mapping_tbl_Login;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -64,8 +68,8 @@ namespace SmartFoodChoiceApp {
                 if ((ds.Tables["tbl_Overzicht"] != null)) {
                     base.Tables.Add(new tbl_OverzichtDataTable(ds.Tables["tbl_Overzicht"]));
                 }
-                if ((ds.Tables["DataTable1"] != null)) {
-                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
+                if ((ds.Tables["tbl_Mapping"] != null)) {
+                    base.Tables.Add(new tbl_MappingDataTable(ds.Tables["tbl_Mapping"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -109,9 +113,9 @@ namespace SmartFoodChoiceApp {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DataTable1DataTable DataTable1 {
+        public tbl_MappingDataTable tbl_Mapping {
             get {
-                return this.tableDataTable1;
+                return this.tabletbl_Mapping;
             }
         }
         
@@ -188,8 +192,8 @@ namespace SmartFoodChoiceApp {
                 if ((ds.Tables["tbl_Overzicht"] != null)) {
                     base.Tables.Add(new tbl_OverzichtDataTable(ds.Tables["tbl_Overzicht"]));
                 }
-                if ((ds.Tables["DataTable1"] != null)) {
-                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
+                if ((ds.Tables["tbl_Mapping"] != null)) {
+                    base.Tables.Add(new tbl_MappingDataTable(ds.Tables["tbl_Mapping"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -236,12 +240,14 @@ namespace SmartFoodChoiceApp {
                     this.tabletbl_Overzicht.InitVars();
                 }
             }
-            this.tableDataTable1 = ((DataTable1DataTable)(base.Tables["DataTable1"]));
+            this.tabletbl_Mapping = ((tbl_MappingDataTable)(base.Tables["tbl_Mapping"]));
             if ((initTable == true)) {
-                if ((this.tableDataTable1 != null)) {
-                    this.tableDataTable1.InitVars();
+                if ((this.tabletbl_Mapping != null)) {
+                    this.tabletbl_Mapping.InitVars();
                 }
             }
+            this.relationtbl_Mapping_tbl_Overzicht = this.Relations["tbl_Mapping_tbl_Overzicht"];
+            this.relationtbl_Mapping_tbl_Login = this.Relations["tbl_Mapping_tbl_Login"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -256,8 +262,16 @@ namespace SmartFoodChoiceApp {
             base.Tables.Add(this.tabletbl_Login);
             this.tabletbl_Overzicht = new tbl_OverzichtDataTable();
             base.Tables.Add(this.tabletbl_Overzicht);
-            this.tableDataTable1 = new DataTable1DataTable();
-            base.Tables.Add(this.tableDataTable1);
+            this.tabletbl_Mapping = new tbl_MappingDataTable();
+            base.Tables.Add(this.tabletbl_Mapping);
+            this.relationtbl_Mapping_tbl_Overzicht = new global::System.Data.DataRelation("tbl_Mapping_tbl_Overzicht", new global::System.Data.DataColumn[] {
+                        this.tabletbl_Mapping.Product_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tabletbl_Overzicht.Product_IDColumn}, false);
+            this.Relations.Add(this.relationtbl_Mapping_tbl_Overzicht);
+            this.relationtbl_Mapping_tbl_Login = new global::System.Data.DataRelation("tbl_Mapping_tbl_Login", new global::System.Data.DataColumn[] {
+                        this.tabletbl_Mapping.User_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tabletbl_Login.UserIDColumn}, false);
+            this.Relations.Add(this.relationtbl_Mapping_tbl_Login);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -274,7 +288,7 @@ namespace SmartFoodChoiceApp {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeDataTable1() {
+        private bool ShouldSerializetbl_Mapping() {
             return false;
         }
         
@@ -340,7 +354,7 @@ namespace SmartFoodChoiceApp {
         public delegate void tbl_OverzichtRowChangeEventHandler(object sender, tbl_OverzichtRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void DataTable1RowChangeEventHandler(object sender, DataTable1RowChangeEvent e);
+        public delegate void tbl_MappingRowChangeEventHandler(object sender, tbl_MappingRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -459,13 +473,16 @@ namespace SmartFoodChoiceApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tbl_LoginRow Addtbl_LoginRow(int UserID, string UserName, string Password, string Recht) {
+            public tbl_LoginRow Addtbl_LoginRow(tbl_MappingRow parenttbl_MappingRowBytbl_Mapping_tbl_Login, string UserName, string Password, string Recht) {
                 tbl_LoginRow rowtbl_LoginRow = ((tbl_LoginRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        UserID,
+                        null,
                         UserName,
                         Password,
                         Recht};
+                if ((parenttbl_MappingRowBytbl_Mapping_tbl_Login != null)) {
+                    columnValuesArray[0] = parenttbl_MappingRowBytbl_Mapping_tbl_Login[3];
+                }
                 rowtbl_LoginRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbl_LoginRow);
                 return rowtbl_LoginRow;
@@ -772,14 +789,17 @@ namespace SmartFoodChoiceApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tbl_OverzichtRow Addtbl_OverzichtRow(int Product_ID, string Smiley, System.DateTime Datum_Tijd, string Productnaam, string _CO_2_uitstoot) {
+            public tbl_OverzichtRow Addtbl_OverzichtRow(tbl_MappingRow parenttbl_MappingRowBytbl_Mapping_tbl_Overzicht, string Smiley, System.DateTime Datum_Tijd, string Productnaam, string _CO_2_uitstoot) {
                 tbl_OverzichtRow rowtbl_OverzichtRow = ((tbl_OverzichtRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Product_ID,
+                        null,
                         Smiley,
                         Datum_Tijd,
                         Productnaam,
                         _CO_2_uitstoot};
+                if ((parenttbl_MappingRowBytbl_Mapping_tbl_Overzicht != null)) {
+                    columnValuesArray[0] = parenttbl_MappingRowBytbl_Mapping_tbl_Overzicht[1];
+                }
                 rowtbl_OverzichtRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbl_OverzichtRow);
                 return rowtbl_OverzichtRow;
@@ -971,12 +991,20 @@ namespace SmartFoodChoiceApp {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
+        public partial class tbl_MappingDataTable : global::System.Data.TypedTableBase<tbl_MappingRow> {
+            
+            private global::System.Data.DataColumn columnId;
+            
+            private global::System.Data.DataColumn columnProduct_ID;
+            
+            private global::System.Data.DataColumn columnDatum_en_Tijd;
+            
+            private global::System.Data.DataColumn columnUser_ID;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1DataTable() {
-                this.TableName = "DataTable1";
+            public tbl_MappingDataTable() {
+                this.TableName = "tbl_Mapping";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -984,7 +1012,7 @@ namespace SmartFoodChoiceApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DataTable1DataTable(global::System.Data.DataTable table) {
+            internal tbl_MappingDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1001,9 +1029,41 @@ namespace SmartFoodChoiceApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected DataTable1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected tbl_MappingDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn IdColumn {
+                get {
+                    return this.columnId;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Product_IDColumn {
+                get {
+                    return this.columnProduct_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Datum_en_TijdColumn {
+                get {
+                    return this.columnDatum_en_Tijd;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn User_IDColumn {
+                get {
+                    return this.columnUser_ID;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1017,44 +1077,55 @@ namespace SmartFoodChoiceApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row this[int index] {
+            public tbl_MappingRow this[int index] {
                 get {
-                    return ((DataTable1Row)(this.Rows[index]));
+                    return ((tbl_MappingRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowChanging;
+            public event tbl_MappingRowChangeEventHandler tbl_MappingRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowChanged;
+            public event tbl_MappingRowChangeEventHandler tbl_MappingRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowDeleting;
+            public event tbl_MappingRowChangeEventHandler tbl_MappingRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowDeleted;
+            public event tbl_MappingRowChangeEventHandler tbl_MappingRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddDataTable1Row(DataTable1Row row) {
+            public void Addtbl_MappingRow(tbl_MappingRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row() {
-                DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
-                object[] columnValuesArray = new object[0];
-                rowDataTable1Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDataTable1Row);
-                return rowDataTable1Row;
+            public tbl_MappingRow Addtbl_MappingRow(int Id, int Product_ID, System.DateTime Datum_en_Tijd, int User_ID) {
+                tbl_MappingRow rowtbl_MappingRow = ((tbl_MappingRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Id,
+                        Product_ID,
+                        Datum_en_Tijd,
+                        User_ID};
+                rowtbl_MappingRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtbl_MappingRow);
+                return rowtbl_MappingRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_MappingRow FindById(int Id) {
+                return ((tbl_MappingRow)(this.Rows.Find(new object[] {
+                            Id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                DataTable1DataTable cln = ((DataTable1DataTable)(base.Clone()));
+                tbl_MappingDataTable cln = ((tbl_MappingDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1062,43 +1133,62 @@ namespace SmartFoodChoiceApp {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new DataTable1DataTable();
+                return new tbl_MappingDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
+                this.columnId = base.Columns["Id"];
+                this.columnProduct_ID = base.Columns["Product_ID"];
+                this.columnDatum_en_Tijd = base.Columns["Datum en Tijd"];
+                this.columnUser_ID = base.Columns["User_ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
+                this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId);
+                this.columnProduct_ID = new global::System.Data.DataColumn("Product_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProduct_ID);
+                this.columnDatum_en_Tijd = new global::System.Data.DataColumn("Datum en Tijd", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDatum_en_Tijd);
+                this.columnUser_ID = new global::System.Data.DataColumn("User_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUser_ID);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnId}, true));
+                this.columnId.AllowDBNull = false;
+                this.columnId.Unique = true;
+                this.columnProduct_ID.AllowDBNull = false;
+                this.columnDatum_en_Tijd.AllowDBNull = false;
+                this.columnUser_ID.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row NewDataTable1Row() {
-                return ((DataTable1Row)(this.NewRow()));
+            public tbl_MappingRow Newtbl_MappingRow() {
+                return ((tbl_MappingRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DataTable1Row(builder);
+                return new tbl_MappingRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(DataTable1Row);
+                return typeof(tbl_MappingRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.DataTable1RowChanged != null)) {
-                    this.DataTable1RowChanged(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.tbl_MappingRowChanged != null)) {
+                    this.tbl_MappingRowChanged(this, new tbl_MappingRowChangeEvent(((tbl_MappingRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1106,8 +1196,8 @@ namespace SmartFoodChoiceApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.DataTable1RowChanging != null)) {
-                    this.DataTable1RowChanging(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.tbl_MappingRowChanging != null)) {
+                    this.tbl_MappingRowChanging(this, new tbl_MappingRowChangeEvent(((tbl_MappingRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1115,8 +1205,8 @@ namespace SmartFoodChoiceApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.DataTable1RowDeleted != null)) {
-                    this.DataTable1RowDeleted(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.tbl_MappingRowDeleted != null)) {
+                    this.tbl_MappingRowDeleted(this, new tbl_MappingRowChangeEvent(((tbl_MappingRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1124,14 +1214,14 @@ namespace SmartFoodChoiceApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.DataTable1RowDeleting != null)) {
-                    this.DataTable1RowDeleting(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.tbl_MappingRowDeleting != null)) {
+                    this.tbl_MappingRowDeleting(this, new tbl_MappingRowChangeEvent(((tbl_MappingRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveDataTable1Row(DataTable1Row row) {
+            public void Removetbl_MappingRow(tbl_MappingRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1158,7 +1248,7 @@ namespace SmartFoodChoiceApp {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DataTable1DataTable";
+                attribute2.FixedValue = "tbl_MappingDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1269,6 +1359,17 @@ namespace SmartFoodChoiceApp {
                 }
                 set {
                     this[this.tabletbl_Login.RechtColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_MappingRow tbl_MappingRow {
+                get {
+                    return ((tbl_MappingRow)(this.GetParentRow(this.Table.ParentRelations["tbl_Mapping_tbl_Login"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["tbl_Mapping_tbl_Login"]);
                 }
             }
             
@@ -1390,6 +1491,17 @@ namespace SmartFoodChoiceApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_MappingRow tbl_MappingRow {
+                get {
+                    return ((tbl_MappingRow)(this.GetParentRow(this.Table.ParentRelations["tbl_Mapping_tbl_Overzicht"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["tbl_Mapping_tbl_Overzicht"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsDatum_TijdNull() {
                 return this.IsNull(this.tabletbl_Overzicht.Datum_TijdColumn);
             }
@@ -1416,15 +1528,81 @@ namespace SmartFoodChoiceApp {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class DataTable1Row : global::System.Data.DataRow {
+        public partial class tbl_MappingRow : global::System.Data.DataRow {
             
-            private DataTable1DataTable tableDataTable1;
+            private tbl_MappingDataTable tabletbl_Mapping;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DataTable1Row(global::System.Data.DataRowBuilder rb) : 
+            internal tbl_MappingRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableDataTable1 = ((DataTable1DataTable)(this.Table));
+                this.tabletbl_Mapping = ((tbl_MappingDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Id {
+                get {
+                    return ((int)(this[this.tabletbl_Mapping.IdColumn]));
+                }
+                set {
+                    this[this.tabletbl_Mapping.IdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Product_ID {
+                get {
+                    return ((int)(this[this.tabletbl_Mapping.Product_IDColumn]));
+                }
+                set {
+                    this[this.tabletbl_Mapping.Product_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime Datum_en_Tijd {
+                get {
+                    return ((global::System.DateTime)(this[this.tabletbl_Mapping.Datum_en_TijdColumn]));
+                }
+                set {
+                    this[this.tabletbl_Mapping.Datum_en_TijdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int User_ID {
+                get {
+                    return ((int)(this[this.tabletbl_Mapping.User_IDColumn]));
+                }
+                set {
+                    this[this.tabletbl_Mapping.User_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_OverzichtRow[] Gettbl_OverzichtRows() {
+                if ((this.Table.ChildRelations["tbl_Mapping_tbl_Overzicht"] == null)) {
+                    return new tbl_OverzichtRow[0];
+                }
+                else {
+                    return ((tbl_OverzichtRow[])(base.GetChildRows(this.Table.ChildRelations["tbl_Mapping_tbl_Overzicht"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_LoginRow[] Gettbl_LoginRows() {
+                if ((this.Table.ChildRelations["tbl_Mapping_tbl_Login"] == null)) {
+                    return new tbl_LoginRow[0];
+                }
+                else {
+                    return ((tbl_LoginRow[])(base.GetChildRows(this.Table.ChildRelations["tbl_Mapping_tbl_Login"])));
+                }
             }
         }
         
@@ -1500,22 +1678,22 @@ namespace SmartFoodChoiceApp {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class DataTable1RowChangeEvent : global::System.EventArgs {
+        public class tbl_MappingRowChangeEvent : global::System.EventArgs {
             
-            private DataTable1Row eventRow;
+            private tbl_MappingRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1RowChangeEvent(DataTable1Row row, global::System.Data.DataRowAction action) {
+            public tbl_MappingRowChangeEvent(tbl_MappingRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row Row {
+            public tbl_MappingRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1531,7 +1709,7 @@ namespace SmartFoodChoiceApp {
         }
     }
 }
-namespace SmartFoodChoiceApp.DataSet1TableAdapters {
+namespace SmartFoodChoice.DataSet1TableAdapters {
     
     
     /// <summary>
@@ -1703,7 +1881,7 @@ SELECT UserID, UserName, Password, Recht FROM tbl_Login WHERE (UserID = @UserID)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::SmartFoodChoiceApp.Properties.Settings.Default.ExcellentTasteConnectionString;
+            this._connection.ConnectionString = global::SmartFoodChoice.Properties.Settings.Default.ExcellentTasteConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2096,7 +2274,7 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::SmartFoodChoiceApp.Properties.Settings.Default.ExcellentTasteConnectionString;
+            this._connection.ConnectionString = global::SmartFoodChoice.Properties.Settings.Default.ExcellentTasteConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2328,6 +2506,325 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class tbl_MappingTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public tbl_MappingTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "tbl_Mapping";
+            tableMapping.ColumnMappings.Add("Id", "Id");
+            tableMapping.ColumnMappings.Add("Product_ID", "Product_ID");
+            tableMapping.ColumnMappings.Add("Datum en Tijd", "Datum en Tijd");
+            tableMapping.ColumnMappings.Add("User_ID", "User_ID");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[tbl_Mapping] WHERE (([Id] = @Original_Id) AND ([Product_ID] = " +
+                "@Original_Product_ID) AND ([Datum en Tijd] = @Original_Datum_en_Tijd) AND ([User" +
+                "_ID] = @Original_User_ID))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Product_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Product_ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Datum_en_Tijd", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Datum en Tijd", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[tbl_Mapping] ([Id], [Product_ID], [Datum en Tijd], [User_ID]) " +
+                "VALUES (@Id, @Product_ID, @Datum_en_Tijd, @User_ID);\r\nSELECT Id, Product_ID, [Da" +
+                "tum en Tijd], User_ID FROM tbl_Mapping WHERE (Id = @Id)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Product_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Product_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Datum_en_Tijd", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Datum en Tijd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tbl_Mapping] SET [Id] = @Id, [Product_ID] = @Product_ID, [Datum en Tijd] = @Datum_en_Tijd, [User_ID] = @User_ID WHERE (([Id] = @Original_Id) AND ([Product_ID] = @Original_Product_ID) AND ([Datum en Tijd] = @Original_Datum_en_Tijd) AND ([User_ID] = @Original_User_ID));
+SELECT Id, Product_ID, [Datum en Tijd], User_ID FROM tbl_Mapping WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Product_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Product_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Datum_en_Tijd", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Datum en Tijd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Product_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Product_ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Datum_en_Tijd", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Datum en Tijd", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::SmartFoodChoice.Properties.Settings.Default.ExcellentTasteConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT Id, Product_ID, [Datum en Tijd], User_ID FROM dbo.tbl_Mapping";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSet1.tbl_MappingDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSet1.tbl_MappingDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.tbl_MappingDataTable dataTable = new DataSet1.tbl_MappingDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSet1.tbl_MappingDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSet1 dataSet) {
+            return this.Adapter.Update(dataSet, "tbl_Mapping");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_Id, int Original_Product_ID, System.DateTime Original_Datum_en_Tijd, int Original_User_ID) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
+            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_Product_ID));
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_Datum_en_Tijd));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_User_ID));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int Id, int Product_ID, System.DateTime Datum_en_Tijd, int User_ID) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Id));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Product_ID));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(Datum_en_Tijd));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(User_ID));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int Id, int Product_ID, System.DateTime Datum_en_Tijd, int User_ID, int Original_Id, int Original_Product_ID, System.DateTime Original_Datum_en_Tijd, int Original_User_ID) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Product_ID));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(Datum_en_Tijd));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(User_ID));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_Id));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Product_ID));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((System.DateTime)(Original_Datum_en_Tijd));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_User_ID));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int Product_ID, System.DateTime Datum_en_Tijd, int User_ID, int Original_Id, int Original_Product_ID, System.DateTime Original_Datum_en_Tijd, int Original_User_ID) {
+            return this.Update(Original_Id, Product_ID, Datum_en_Tijd, User_ID, Original_Id, Original_Product_ID, Original_Datum_en_Tijd, Original_User_ID);
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2342,6 +2839,8 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
         private tbl_LoginTableAdapter _tbl_LoginTableAdapter;
         
         private tbl_OverzichtTableAdapter _tbl_OverzichtTableAdapter;
+        
+        private tbl_MappingTableAdapter _tbl_MappingTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -2388,6 +2887,20 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public tbl_MappingTableAdapter tbl_MappingTableAdapter {
+            get {
+                return this._tbl_MappingTableAdapter;
+            }
+            set {
+                this._tbl_MappingTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -2413,6 +2926,10 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
                             && (this._tbl_OverzichtTableAdapter.Connection != null))) {
                     return this._tbl_OverzichtTableAdapter.Connection;
                 }
+                if (((this._tbl_MappingTableAdapter != null) 
+                            && (this._tbl_MappingTableAdapter.Connection != null))) {
+                    return this._tbl_MappingTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -2432,6 +2949,9 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
                 if ((this._tbl_OverzichtTableAdapter != null)) {
                     count = (count + 1);
                 }
+                if ((this._tbl_MappingTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -2443,12 +2963,12 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateUpdatedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tbl_LoginTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tbl_Login.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._tbl_MappingTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tbl_Mapping.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._tbl_LoginTableAdapter.Update(updatedRows));
+                    result = (result + this._tbl_MappingTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -2458,6 +2978,15 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._tbl_OverzichtTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._tbl_LoginTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tbl_Login.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tbl_LoginTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -2471,11 +3000,11 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateInsertedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tbl_LoginTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tbl_Login.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._tbl_MappingTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tbl_Mapping.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._tbl_LoginTableAdapter.Update(addedRows));
+                    result = (result + this._tbl_MappingTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -2484,6 +3013,14 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._tbl_OverzichtTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._tbl_LoginTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tbl_Login.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tbl_LoginTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -2497,6 +3034,14 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateDeletedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._tbl_LoginTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tbl_Login.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tbl_LoginTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._tbl_OverzichtTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tbl_Overzicht.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -2505,11 +3050,11 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._tbl_LoginTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tbl_Login.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._tbl_MappingTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tbl_Mapping.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._tbl_LoginTableAdapter.Update(deletedRows));
+                    result = (result + this._tbl_MappingTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -2562,6 +3107,11 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
+            if (((this._tbl_MappingTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tbl_MappingTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager contains no connection information. Set each TableAdapterMana" +
@@ -2610,6 +3160,15 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
                     if (this._tbl_OverzichtTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._tbl_OverzichtTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_OverzichtTableAdapter.Adapter);
+                    }
+                }
+                if ((this._tbl_MappingTableAdapter != null)) {
+                    revertConnections.Add(this._tbl_MappingTableAdapter, this._tbl_MappingTableAdapter.Connection);
+                    this._tbl_MappingTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tbl_MappingTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tbl_MappingTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tbl_MappingTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_MappingTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -2677,6 +3236,10 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
                 if ((this._tbl_OverzichtTableAdapter != null)) {
                     this._tbl_OverzichtTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tbl_OverzichtTableAdapter]));
                     this._tbl_OverzichtTableAdapter.Transaction = null;
+                }
+                if ((this._tbl_MappingTableAdapter != null)) {
+                    this._tbl_MappingTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tbl_MappingTableAdapter]));
+                    this._tbl_MappingTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

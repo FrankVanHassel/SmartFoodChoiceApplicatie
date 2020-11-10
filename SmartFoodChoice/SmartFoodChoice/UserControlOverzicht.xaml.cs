@@ -1,21 +1,9 @@
-﻿using SmartFoodChoiceApp;
-using System;
+﻿using SmartFoodChoice.Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 
-namespace SmartFoodChoiceApp
+namespace SmartFoodChoice
 {
     /// <summary>
     /// Interaction logic for UserControlOverzicht.xaml
@@ -26,9 +14,13 @@ namespace SmartFoodChoiceApp
         public UserControlOverzicht()
         {
             InitializeComponent();
-           
-     
+            List<Item> list = new List<Item>();
+            list.Add(new Item { ProductId = 1, CO2Value = 30, Productnaam = "A", Smiley = "Sad", Image = "images/burger.png" });
+            list.Add(new Item { ProductId = 2, CO2Value = 40, Productnaam = "B", Smiley = "Sad", Image = "images/burger.png" });
+            list.Add(new Item { ProductId = 3, CO2Value = 50, Productnaam = "C", Smiley = "Sad", Image = "images/burger.png" });
+            list.Add(new Item { ProductId = 4, CO2Value = 60.4, Productnaam = "D", Smiley = "Sad", Image = "images/burger.png" });
 
+            this.datagrid.ItemsSource = list;
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

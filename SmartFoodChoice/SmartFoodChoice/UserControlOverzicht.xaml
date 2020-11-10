@@ -1,15 +1,16 @@
-﻿<UserControl x:Class="SmartFoodChoiceApp.UserControlOverzicht"
+﻿<UserControl x:Class="SmartFoodChoice.UserControlOverzicht"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SmartFoodChoiceApp"
              mc:Ignorable="d" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
             >
     <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="#FFDEDEDE" >
-
-        <FlowDocumentScrollViewer Margin="163,33,68,32">
+        <DataGrid Name="datagrid">
+            
+        </DataGrid>
+        <!--<FlowDocumentScrollViewer Margin="163,33,68,32">
             <FlowDocument>
 
                 <Table CellSpacing="5" Foreground="#FF040303">
@@ -125,7 +126,7 @@
                     </TableRowGroup>
                 </Table>
             </FlowDocument>
-        </FlowDocumentScrollViewer>
+        </FlowDocumentScrollViewer>-->
 
     </Grid>
 

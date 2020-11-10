@@ -27,7 +27,7 @@
                 <PasswordBox x:Name="txtPassword" Margin="0,10" materialDesign:HintAssist.Hint="Wachtwoord" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Arial" FontSize="18" Foreground="#FF0C131A"/>
             </StackPanel>
         </Grid>
-        <Button x:Name="btnLogin" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="Inloggen" Click="btnLogin_Click" Background="#1bff00" BorderBrush="#FFF0C851" FontFamily="Arial" FontWeight="Bold" Foreground="#FF0C131A"/>
+        <Button x:Name="btnLogin" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="Inloggen" IsDefault="True" Click="btnLogin_Click" Background="#1bff00" BorderBrush="#FFF0C851" FontFamily="Arial" FontWeight="Bold" Foreground="#FF0C131A"/>
         <Button Margin="87,450,87,18" Background="#FF0C161F" BorderBrush="#FF0C161F" FontWeight="Normal" FontFamily="Arial" Click="Button_Click">
             <TextBlock TextWrapping="Wrap">Wachtwoord vergeten?</TextBlock>
         </Button>

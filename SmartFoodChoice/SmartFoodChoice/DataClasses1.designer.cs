@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SmartFoodChoiceApp
+namespace SmartFoodChoice
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -39,7 +39,7 @@ namespace SmartFoodChoiceApp
     #endregion
 		
 		public DataClasses1DataContext() : 
-				base(global::SmartFoodChoiceApp.Properties.Settings.Default.ExcellentTasteConnectionString, mappingSource)
+				base(global::SmartFoodChoice.Properties.Settings.Default.ExcellentTasteConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

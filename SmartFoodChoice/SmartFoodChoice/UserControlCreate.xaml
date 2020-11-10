@@ -3,11 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SmartFoodChoice"
              mc:Ignorable="d" 
             >
     <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="#FFDEDEDE" RenderTransformOrigin="0.511,0.519">
-        <Button x:Name="toevoegen_btn"  Content="Bereken CO-2 uitstoot" HorizontalAlignment="Left" Margin="800,437,0,0" VerticalAlignment="Top" Width="186" Click="Button_Click_toevoegen" Height="70" Background="#FF08CD08" BorderBrush="#FF0C0F0D" Foreground="#FF0E0B0B" FontFamily="Arial" FontSize="15" RenderTransformOrigin="0.5,0.5">
+        <!--<Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+                
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0"></Button>
+            <Label Grid.Row="1" Content="owqeiow"></Label>
+        </Grid>-->
+        <WrapPanel Orientation="Vertical">
+            <ItemsControl Name="overzichtList">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <!--<CheckBox Content="test" Checked="CheckBox_Checked"></CheckBox>-->
+                            <Button Grid.Row="0" Grid.Column="0" Click="Button_Click">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="{Binding Image}"/>
+                                </Button.Background>
+                            </Button>
+                            <!--<Button HorizontalAlignment="Left" Width="80" Height="80" VerticalAlignment="Top" Tag="{Binding}" Click="Button_Click" BorderBrush="#FF09090A" BorderThickness="2" >
+                            <Button.Background>
+                                <ImageBrush ImageSource="{Binding Image}"/>
+                            </Button.Background>
+                        </Button>-->
+                            <Label Grid.Row="1" Grid.Column="0" Content="{Binding Productnaam}" />
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </WrapPanel>
+        <!--<Button x:Name="toevoegen_btn"  Content="Bereken CO-2 uitstoot" HorizontalAlignment="Left" Margin="800,437,0,0" VerticalAlignment="Top" Width="186" Click="Button_Click_toevoegen" Height="70" Background="#FF08CD08" BorderBrush="#FF0C0F0D" Foreground="#FF0E0B0B" FontFamily="Arial" FontSize="15" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -148,6 +188,6 @@
         <Label Content="Kip" HorizontalAlignment="Left" Margin="298,174,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
         <Label Content="Biefstuk" HorizontalAlignment="Left" Margin="398,174,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
         <Label Content="Pizza" HorizontalAlignment="Left" Margin="598,174,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
-        <Label Content="Sushi" HorizontalAlignment="Left" Margin="498,174,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Sushi" HorizontalAlignment="Left" Margin="498,174,0,0" VerticalAlignment="Top" Width="80" Height="30"/>-->
     </Grid>
 </UserControl>
