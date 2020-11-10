@@ -8,10 +8,15 @@ namespace SmartFoodChoice
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
-           
+            var userName = Application.Current.Resources["UserName"];
+            if (userName != null)
+            {
+                this.txtUsername.Text = userName.ToString();
+            }
         }
        
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)

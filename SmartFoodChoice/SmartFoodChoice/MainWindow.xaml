@@ -42,7 +42,7 @@
                 <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#0c131a"/>
             </Grid.Effect>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <TextBlock Text="User" VerticalAlignment="Center" FontSize="16"/>
+                <TextBlock Name="txtUsername" VerticalAlignment="Center" FontSize="16"/>
                 <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" StaysOpen="True" Margin="10">
                     <StackPanel Width="150">
                         <Separator/>

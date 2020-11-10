@@ -1,6 +1,8 @@
 ﻿using SmartFoodChoice.Model;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,10 +21,10 @@ namespace SmartFoodChoice
         {
             InitializeComponent();
             List<Item> list = new List<Item>();
-            list.Add(new Item { ProductId = 1, CO2Value = 30, Productnaam = "A", Smiley = "Sad", Image="images/burger.png" });
-            list.Add(new Item { ProductId = 2, CO2Value = 40, Productnaam = "B", Smiley = "Sad",Image="images/burger.png" });
+            list.Add(new Item { ProductId = 1, CO2Value = 30, Productnaam = "A", Smiley = "Sad", Image = "images/burger.png" });
+            list.Add(new Item { ProductId = 2, CO2Value = 40, Productnaam = "B", Smiley = "Sad", Image = "images/burger.png" });
             list.Add(new Item { ProductId = 3, CO2Value = 50, Productnaam = "C", Smiley = "Sad", Image = "images/burger.png" });
-            list.Add(new Item { ProductId = 4, CO2Value = 60.4, Productnaam = "D", Smiley = "Sad" , Image = "images/burger.png" });
+            list.Add(new Item { ProductId = 4, CO2Value = 60.4, Productnaam = "D", Smiley = "Sad", Image = "images/burger.png" });
             this.overzichtList.ItemsSource = list;
 
         }
@@ -30,6 +32,7 @@ namespace SmartFoodChoice
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var item = (Item)(sender as Button).DataContext;
+            this.Lijst.Items.Add(item);
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
@@ -122,28 +125,44 @@ namespace SmartFoodChoice
         //}
 
 
-        //private void btn_ClearList_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Lijst.Items.Clear();
-        //}
-        //private void Button_Click_toevoegen(object sender, RoutedEventArgs e)
-        //{
-        //    int i = 0, 
-        //    result = 0;
-        //    var sum = Lijst.Items
-        //     .OfType<string>()
-        //     .Select(s => Convert.ToDouble(s.Split(new string[] { "-" }, StringSplitOptions.RemoveEmptyEntries)[1]))     
-        //     .Sum();
+        private void btn_ClearList_Click(object sender, RoutedEventArgs e)
+        {
+            Lijst.Items.Clear();
+        }
 
-        //    MessageBox.Show( "Aantal kilo CO-2 uitstoot: " + sum.ToString());
+        private void Button_Click_toevoegen(object sender, RoutedEventArgs e)
+        {
+            var sum = Lijst.Items
+             .OfType<string>()
+             .Select(s => Convert.ToDouble(s.Split(new string[] { "-" }, StringSplitOptions.RemoveEmptyEntries)[1]))
+             .Sum();
 
-        //}
+            int userId = Convert.ToInt32(Application.Current.Resources["UserId"]);
 
-        //private void btn_Remove_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Lijst.Items.Remove(Lijst.SelectedItem);
-        //}
+            using (SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\SmartFoodChoice.mdf;Integrated Security=True"))
+            {
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
 
+                foreach (Item item in Lijst.Items)
+                {
+                    string query = @"INSERT INTO tbl_Mapping (Product_ID, User_ID, [Datum en Tijd]) VALUES (@ProductId, @UserId, @Date)";
+                    SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                    sqlCmd.CommandType = CommandType.Text;
+                    sqlCmd.Parameters.AddWithValue("@ProductId", item.ProductId);
+                    sqlCmd.Parameters.AddWithValue("@UserId", userId);
+                    sqlCmd.Parameters.AddWithValue("@Date", DateTime.UtcNow);
+                    sqlCmd.ExecuteNonQuery();
+                }
+                sqlCon.Close();
+            }
 
+            MessageBox.Show("Aantal kilo CO-2 uitstoot: " + sum.ToString());
+        }
+
+        private void btn_Remove_Click(object sender, RoutedEventArgs e)
+        {
+            Lijst.Items.Remove(Lijst.SelectedItem);
+        }
     }
 }

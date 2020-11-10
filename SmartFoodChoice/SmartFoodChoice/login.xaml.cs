@@ -35,6 +35,8 @@ namespace SmartFoodChoice
                 if (count == 1)
                 {
                     MessageBox.Show("Welkom Gebruiker");
+                    Application.Current.Resources.Add("UserName", txtUsername.Text);
+                    Application.Current.Resources.Add("UserId", 1);
                     MainWindow gebruiker = new MainWindow();
                     gebruiker.Show();
                     this.Close();
