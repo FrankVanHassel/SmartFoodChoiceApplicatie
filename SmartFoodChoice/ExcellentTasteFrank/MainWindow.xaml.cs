@@ -25,7 +25,9 @@ namespace ExcellentTasteFrank
         public MainWindow()
         {
             InitializeComponent();
+           
         }
+       
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
         {
             ButtonCloseMenu.Visibility = Visibility.Visible;
@@ -46,8 +48,8 @@ namespace ExcellentTasteFrank
             switch (((ListViewItem)((ListView)sender).SelectedItem).Name)
             {
                 case "ItemHome":
-                    usc = new UserControlHome();
-                    GridMain.Children.Add(usc);
+                    MainWindow mypage = new MainWindow();
+                    mypage.Show();
                     break;
                 case "ItemCreate":
                     usc = new UserControlCreate();

@@ -65,7 +65,6 @@ C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodCh
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\login.g.cs
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\MainWindow.g.cs
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlCreate.g.cs
-C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlHome.g.cs
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\App.g.cs
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_Content.g.cs
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_MarkupCompile.cache
@@ -86,7 +85,6 @@ C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodCh
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\login.baml
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\MainWindow.baml
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlCreate.baml
-C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlHome.baml
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.g.resources
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.Properties.Resources.resources
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.GenerateResource.cache
@@ -94,3 +92,34 @@ C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodCh
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.CopyComplete
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlOverzicht.g.cs
 C:\Users\stanv\Source\Repos\FrankVanHassel\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlOverzicht.baml
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\SmartFoodChoice.mdf
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\SmartFoodChoice_log.ldf
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\SmartFoodChoiceApp.exe.config
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\SmartFoodChoiceApp.exe
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\SmartFoodChoiceApp.pdb
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\MaterialDesignColors.dll
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csprojAssemblyReference.cache
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\login.g.cs
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\MainWindow.g.cs
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlCreate.g.cs
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlOverzicht.g.cs
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\App.g.cs
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_Content.g.cs
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_MarkupCompile.cache
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp_MarkupCompile.lref
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\App.baml
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\login.baml
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\MainWindow.baml
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlCreate.baml
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\UserControlOverzicht.baml
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.g.resources
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.Properties.Resources.resources
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.GenerateResource.cache
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.CoreCompileInputs.cache
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoice.csproj.CopyComplete
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.exe
+C:\Users\Frank van Hassel\source\repos\SmartFoodChoiceApplicatie\SmartFoodChoice\ExcellentTasteFrank\obj\Debug\SmartFoodChoiceApp.pdb

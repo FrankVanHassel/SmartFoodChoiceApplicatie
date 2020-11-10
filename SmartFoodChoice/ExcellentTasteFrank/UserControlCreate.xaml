@@ -6,8 +6,8 @@
              xmlns:local="clr-namespace:ExcellentTasteFrank"
              mc:Ignorable="d" 
             >
-    <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="White" RenderTransformOrigin="0.511,0.519">
-        <Button x:Name="toevoegen_btn"  Content="Bereken CO-2 uitstoot" HorizontalAlignment="Left" Margin="801,448,0,0" VerticalAlignment="Top" Width="186" Click="Button_Click_toevoegen" Height="70" Background="#FF127A1B" BorderBrush="#FF0C0F0D" Foreground="White" FontFamily="Arial" FontSize="15" RenderTransformOrigin="0.5,0.5">
+    <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="#FFDEDEDE" RenderTransformOrigin="0.511,0.519">
+        <Button x:Name="toevoegen_btn"  Content="Bereken CO-2 uitstoot" HorizontalAlignment="Left" Margin="800,437,0,0" VerticalAlignment="Top" Width="186" Click="Button_Click_toevoegen" Height="70" Background="#FF127A1B" BorderBrush="#FF0C0F0D" Foreground="White" FontFamily="Arial" FontSize="15" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,129 +17,137 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Label Content="Maak hier uw lijstje:" HorizontalAlignment="Left" Margin="312,72,0,0" VerticalAlignment="Top" Width="401" FontFamily="Arial" FontWeight="Bold" FontSize="36" HorizontalContentAlignment="Center"/>
-        <Button x:Name="btn_Burger" Content="" HorizontalAlignment="Left" Height="80" Margin="100,140,0,0" VerticalAlignment="Top" Width="80" Click="btn_Burger_Click" BorderBrush="#FF09090A"  >
+        <Label Content="Maak hier uw lijstje:" HorizontalAlignment="Left" Margin="311,26,0,0" VerticalAlignment="Top" Width="401" FontFamily="Arial" FontWeight="Bold" FontSize="36" HorizontalContentAlignment="Center"/>
+        <Button x:Name="btn_Burger" Content="" HorizontalAlignment="Left" Height="80" Margin="98,89,0,0" VerticalAlignment="Top" Width="80" Click="btn_Burger_Click" BorderBrush="#FF09090A" BorderThickness="2" >
 
             <Button.Background>
-                <ImageBrush ImageSource="burger.png"/>
+                <ImageBrush ImageSource="burgerr.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_VegaBurger" Content="" HorizontalAlignment="Left" Height="80" Margin="200,140,0,0" VerticalAlignment="Top" Width="80" Click="btn_VegaBurger_Click" BorderBrush="#FF16191B">
+        <Button x:Name="btn_VegaBurger" Content="" HorizontalAlignment="Left" Height="80" Margin="198,89,0,0" VerticalAlignment="Top" Width="80" Click="btn_VegaBurger_Click" BorderThickness="2" BorderBrush="#FF16191B">
             <Button.Background>
-                <ImageBrush ImageSource="vegaburger.jpg"/>
+                <ImageBrush ImageSource="vegburger.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_Kip" Content="" HorizontalAlignment="Left" Height="80" Margin="300,140,0,0" VerticalAlignment="Top" Width="80" Click="btn_Kip_Click" BorderBrush="#FF0E1011">
+        <Button x:Name="btn_Kip" Content="" HorizontalAlignment="Left" Height="80" Margin="298,89,0,0" VerticalAlignment="Top" Width="80" Click="btn_Kip_Click" BorderThickness="2" BorderBrush="#FF0E1011">
             <Button.Background>
                 <ImageBrush ImageSource="kip.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_Biefstuk" Content="" HorizontalAlignment="Left" Height="80" Margin="400,140,0,0" VerticalAlignment="Top" Width="80" Click="btn_Biefstuk_Click" BorderBrush="#FF141719">
+        <Button x:Name="btn_Biefstuk" Content="" HorizontalAlignment="Left" Height="80" Margin="398,89,0,0" VerticalAlignment="Top" Width="80" Click="btn_Biefstuk_Click" BorderThickness="2" BorderBrush="#FF141719">
             <Button.Background>
-                <ImageBrush ImageSource="steak-3171790_1280.png" Stretch="Uniform"/>
+                <ImageBrush ImageSource="biefstuk.jpg"/>
+            </Button.Background>
+
+
+        </Button>
+        <Button x:Name="btn_Friet" Content="" HorizontalAlignment="Left" Height="80" Margin="98,209,0,0" VerticalAlignment="Top" Width="80" Click="btn_Friet_Click" BorderThickness="2" BorderBrush="#FF111213">
+            <Button.Background>
+                <ImageBrush ImageSource="fries.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_Friet" Content="" HorizontalAlignment="Left" Height="80" Margin="100,260,0,0" VerticalAlignment="Top" Width="80" Click="btn_Friet_Click" BorderBrush="#FF111213">
+        <Button x:Name="btn_Kaas" Content="" HorizontalAlignment="Left" Height="80" Margin="198,209,0,0" VerticalAlignment="Top" Width="80" Click="btn_Kaas_Click" BorderThickness="2" BorderBrush="#FF17191B">
             <Button.Background>
-                <ImageBrush ImageSource="french-fries-155679_1280.png" Stretch="Uniform"/>
+                <ImageBrush ImageSource="kaas.jpg"/>
             </Button.Background>
+
         </Button>
-        <Button x:Name="btn_Donut" Content="" HorizontalAlignment="Left" Height="80" Margin="200,260,0,0" VerticalAlignment="Top" Width="80" Click="btn_Donut_Click" BorderBrush="#FF17191B">
+        <Button x:Name="btn_Brocolli" Content="" HorizontalAlignment="Left" Height="80" Margin="298,209,0,0" VerticalAlignment="Top" Width="80" Click="btn_Brocolli_Click" BorderThickness="2" BorderBrush="#FF161B1F">
             <Button.Background>
-                <ImageBrush ImageSource="donut.png" Stretch="Uniform"/>
+                <ImageBrush ImageSource="brocolli.png"/>
             </Button.Background>
+
+
+
         </Button>
-        <Button x:Name="btn_Brocolli" Content="" HorizontalAlignment="Left" Height="80" Margin="300,260,0,0" VerticalAlignment="Top" Width="80" Click="btn_Brocolli_Click" BorderBrush="#FF161B1F">
+        <Button x:Name="btn_Salade" Content="" HorizontalAlignment="Left" Height="80" Margin="398,209,0,0" VerticalAlignment="Top" Width="80" Click="btn_Salade_Click" BorderThickness="2" BorderBrush="#FF14181B">
             <Button.Background>
-                <ImageBrush ImageSource="brocolli.png" Stretch="Uniform"/>
+                <ImageBrush ImageSource="salad.jpg"/>
             </Button.Background>
+
+
         </Button>
-        <Button x:Name="btn_Salade" Content="" HorizontalAlignment="Left" Height="80" Margin="400,260,0,0" VerticalAlignment="Top" Width="80" Click="btn_Salade_Click" BorderBrush="#FF14181B">
-            <Button.Background>
-                <ImageBrush ImageSource="salad.png" Stretch="Uniform"/>
-            </Button.Background>
-        </Button>
-        <CheckBox Content="Burger" x:Name="burgerCheck" HorizontalAlignment="Left" Height="30" Margin="100,225,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606" />
-        <CheckBox Content="VegaBurger" Name="VegaBurger" HorizontalAlignment="Left" Height="30" Margin="200,225,0,0" VerticalAlignment="Top" Width="91" Foreground="#FF080606"/>
-        <CheckBox Content="Kip" Name="Kip" HorizontalAlignment="Left" Height="30" Margin="300,225,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Biefstuk" Name="Biefstuk" HorizontalAlignment="Left" Height="30" Margin="400,225,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Friet" Name="Friet" HorizontalAlignment="Left" Height="30" Margin="100,345,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Donut" Name="Donut" HorizontalAlignment="Left" Height="30" Margin="200,345,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Brocolli" Name="Brocolli" HorizontalAlignment="Left" Height="30" Margin="300,345,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Salade" Name="Salade" HorizontalAlignment="Left" Height="30" Margin="400,347,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <ListBox x:Name="Lijst" HorizontalAlignment="Left" Height="320" VerticalAlignment="Top" Width="186" Margin="800,124,0,0" FontFamily="Arial" Background="#FFEAE2E2" Foreground="Black" BorderBrush="#FF127A1B" BorderThickness="5"/>
-        <Button x:Name="btn_ClearList" Content="Clear list" HorizontalAlignment="Left" Margin="893,88,0,0" VerticalAlignment="Top" Width="90" Height="31" Click="btn_ClearList_Click" Background="#FF127A1B" BorderBrush="Black"/>
-        <Button x:Name="btn_Remove" Content="Remove" HorizontalAlignment="Left" Margin="800,88,0,0" VerticalAlignment="Top" Width="90" Height="31" Click="btn_Remove_Click" Background="#FF127A1B" BorderBrush="#FF050506"/>
-       
-        <Button x:Name="btn_Lasgne" Content="" HorizontalAlignment="Left" Height="80" Margin="100,375,0,0" VerticalAlignment="Top" Width="80" BorderBrush="#FF09090A" RenderTransformOrigin="0.512,1.175" Click="btn_Lasgne_Click"  >
+        <ListBox x:Name="Lijst" HorizontalAlignment="Left" Height="320" VerticalAlignment="Top" Width="186" Margin="799,114,0,0" FontFamily="Arial" Background="#FFEAE2E2" Foreground="Black" BorderBrush="#FF127A1B" BorderThickness="5"/>
+        <Button x:Name="btn_ClearList" Content="Clear list" HorizontalAlignment="Left" Margin="895,78,0,0" VerticalAlignment="Top" Width="90" Height="31" Click="btn_ClearList_Click" Background="#FF127A1B" BorderBrush="Black"/>
+        <Button x:Name="btn_Remove" Content="Remove" HorizontalAlignment="Left" Margin="800,78,0,0" VerticalAlignment="Top" Width="90" Height="31" Click="btn_Remove_Click" Background="#FF127A1B" BorderBrush="#FF050506"/>
+
+        <Button x:Name="btn_Lasgne" Content="" HorizontalAlignment="Left" Height="80" Margin="98,324,0,0" VerticalAlignment="Top" Width="80" BorderBrush="#FF09090A" RenderTransformOrigin="0.512,1.175" Click="btn_Lasgne_Click" BorderThickness="2" >
 
             <Button.Background>
                 <ImageBrush ImageSource="lasagne.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_Twix" Content="" HorizontalAlignment="Left" Height="80" Margin="200,375,0,0" VerticalAlignment="Top" Width="80" BorderBrush="#FF09090A" Click="btn_Twix_Click"  >
+        <Button x:Name="btn_Twix" Content="" HorizontalAlignment="Left" Height="80" Margin="198,324,0,0" VerticalAlignment="Top" Width="80" BorderBrush="#FF09090A" Click="btn_Twix_Click" BorderThickness="2" >
 
             <Button.Background>
                 <ImageBrush ImageSource="twix-bar1.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_Kiwi" Content="" HorizontalAlignment="Left" Height="80" Margin="300,375,0,0" VerticalAlignment="Top" Width="80" BorderBrush="#FF09090A" Click="btn_Kiwi_Click"  >
+        <Button x:Name="btn_Kiwi" Content="" HorizontalAlignment="Left" Height="80" Margin="298,324,0,0" VerticalAlignment="Top" Width="80" BorderBrush="#FF09090A" Click="btn_Kiwi_Click" BorderThickness="2" >
 
             <Button.Background>
-                <ImageBrush ImageSource="61c22661bef5b5358c9b8fa4049947aa.png"/>
+                <ImageBrush ImageSource="kiwi.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_Paprika" Content="" HorizontalAlignment="Left" Height="80" Margin="400,375,0,0" VerticalAlignment="Top" Width="80" BorderBrush="#FF09090A" Click="btn_Paprika_Click"  >
+        <Button x:Name="btn_Paprika" Content="" HorizontalAlignment="Left" Height="80" Margin="398,324,0,0" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF09090A" Click="btn_Paprika_Click"  >
 
             <Button.Background>
                 <ImageBrush ImageSource="paprika.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_Sushi" Content="" HorizontalAlignment="Left" Height="80" Margin="500,140,0,0" VerticalAlignment="Top" Width="80"  BorderBrush="#FF09090A" Click="btn_Sushi_Click"  >
+        <Button x:Name="btn_Sushi" Content="" HorizontalAlignment="Left" Height="80" Margin="498,89,0,0" VerticalAlignment="Top" Width="80"  BorderBrush="#FF09090A" Click="btn_Sushi_Click"  >
 
             <Button.Background>
                 <ImageBrush ImageSource="sushi.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_Tomaat" Content="" HorizontalAlignment="Left" Height="80" Margin="500,260,0,0" VerticalAlignment="Top" Width="80"  BorderBrush="#FF09090A" Click="btn_Tomaat_Click"  >
+        <Button x:Name="btn_Tomaat" Content="" HorizontalAlignment="Left" Height="80" Margin="498,209,0,0" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF09090A" Click="btn_Tomaat_Click"  >
 
             <Button.Background>
                 <ImageBrush ImageSource="tomaat.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_Snickers" Content="" HorizontalAlignment="Left" Height="80" Margin="500,375,0,0" VerticalAlignment="Top" Width="80"  BorderBrush="#FF09090A" Click="btn_Snickers_Click"  >
+        <Button x:Name="btn_Snickers" Content="" HorizontalAlignment="Left" Height="80" Margin="498,324,0,0" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF09090A" Click="btn_Snickers_Click"  >
 
             <Button.Background>
                 <ImageBrush ImageSource="snicker.png" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_Banaan" Content="" HorizontalAlignment="Left" Height="80" Margin="600,260,0,0" VerticalAlignment="Top" Width="80" BorderBrush="#FF09090A" Click="btn_Banaan_Click"  >
+        <Button x:Name="btn_Banaan" Content="" HorizontalAlignment="Left" Height="80" Margin="598,209,0,0" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF09090A" Click="btn_Banaan_Click"  >
 
             <Button.Background>
                 <ImageBrush ImageSource="61fZ+YAYGaL._SX679_.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_Garnalen" Content="" HorizontalAlignment="Left" Height="80" Margin="600,375,0,0" VerticalAlignment="Top" Width="80" BorderBrush="#FF09090A" Click="btn_Garnalen_Click"  >
+        <Button x:Name="btn_Garnalen" Content="" HorizontalAlignment="Left" Height="80" Margin="598,324,0,0" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF09090A" Click="btn_Garnalen_Click"  >
 
             <Button.Background>
                 <ImageBrush ImageSource="garnalen.jpg"/>
             </Button.Background>
         </Button>
-        <CheckBox Content="Sushi" x:Name="Sushi" HorizontalAlignment="Left" Height="30" Margin="500,225,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Pizza" x:Name="Pizza" HorizontalAlignment="Left" Height="30" Margin="600,225,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Tomaat" x:Name="Tomaat" HorizontalAlignment="Left" Height="30" Margin="500,345,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Banaan" x:Name="Banaan" HorizontalAlignment="Left" Height="30" Margin="600,345,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Lasagne" x:Name="Lasagne" HorizontalAlignment="Left" Height="30" Margin="100,460,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="twix" x:Name="Twix" HorizontalAlignment="Left" Height="30" Margin="200,460,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Kiwi" x:Name="Kiwi" HorizontalAlignment="Left" Height="30" Margin="300,460,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Paprika" x:Name="Paprika" HorizontalAlignment="Left" Height="30" Margin="400,460,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Snickers" x:Name="Snickers" HorizontalAlignment="Left" Height="30" Margin="500,460,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <CheckBox Content="Garnalen" x:Name="Garnalen" HorizontalAlignment="Left" Height="30" Margin="600,460,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF080606"/>
-        <Button x:Name="btn_Pizza" Content="" HorizontalAlignment="Left" Height="80" Margin="600,140,0,0" VerticalAlignment="Top" Width="80"  BorderBrush="#FF09090A" Click="btn_Pizza_Click"  >
+        <Button x:Name="btn_Pizza" Content="" HorizontalAlignment="Left" Height="80" Margin="598,89,0,0" VerticalAlignment="Top" Width="80"  BorderThickness="2" BorderBrush="#FF09090A" Click="btn_Pizza_Click"  >
 
             <Button.Background>
                 <ImageBrush ImageSource="piza.jpg"/>
             </Button.Background>
         </Button>
+        <Label Content="Burger" HorizontalAlignment="Left" Margin="98,174,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Lasagne" HorizontalAlignment="Left" Margin="98,409,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Twix" HorizontalAlignment="Left" Margin="198,409,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Kiwi" HorizontalAlignment="Left" Margin="298,409,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Paprika" HorizontalAlignment="Left" Margin="398,409,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Snickers" HorizontalAlignment="Left" Margin="498,409,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Garnalen" HorizontalAlignment="Left" Margin="598,409,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Bananen" HorizontalAlignment="Left" Margin="598,294,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Tomaat" HorizontalAlignment="Left" Margin="498,294,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Salade" HorizontalAlignment="Left" Margin="398,294,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Brocolli" HorizontalAlignment="Left" Margin="298,294,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Kaas" HorizontalAlignment="Left" Margin="198,294,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Friet" HorizontalAlignment="Left" Margin="98,294,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="VegaBurger" HorizontalAlignment="Left" Margin="198,174,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Kip" HorizontalAlignment="Left" Margin="298,174,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Biefstuk" HorizontalAlignment="Left" Margin="398,174,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Pizza" HorizontalAlignment="Left" Margin="598,174,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Label Content="Sushi" HorizontalAlignment="Left" Margin="498,174,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
     </Grid>
 </UserControl>
