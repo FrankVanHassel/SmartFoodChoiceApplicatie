@@ -1,0 +1,178 @@
+﻿<UserControl x:Class="SmartFoodChoiceApp.UserControlFavoriet"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SmartFoodChoiceApp"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             >
+    <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="#FFDEDEDE" >
+
+        <FlowDocumentScrollViewer Margin="124,31,124,21" SelectionBrush="Black">
+            <FlowDocument>
+
+                <Table CellSpacing="5" Foreground="#FF040303">
+
+                    <Table.Columns>
+                        <TableColumn Width="100"/>
+                        <TableColumn Width="350"/>
+                    </Table.Columns>
+
+                    <TableRowGroup>
+
+
+                        <TableRow Background="#FF08CD08">
+                            <TableCell ColumnSpan="4" TextAlignment="Center">
+                                <Paragraph FontSize="24pt" FontWeight="Bold">
+                                    <Run Text="Uw favoriete producten"/>
+
+                                </Paragraph>
+
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow Background="#FF86EC70">
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold"/>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt" FontWeight="Bold">
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <InlineUIContainer>
+                                        <materialDesign:PackIcon Kind="Grade" Height="50" Width="50" Margin="10" Foreground="Black"/>
+                                    </InlineUIContainer>
+                                </Paragraph>
+                            </TableCell>
+
+                            <TableCell>
+                                <Paragraph>
+                                    <InlineUIContainer>
+                                        <Button x:Name="btn_Burger" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80"  BorderBrush="#FF09090A" BorderThickness="2" Click="btn_Burger_Click" >
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="images/burgerr.jpg"/>
+                                            </Button.Background>
+                                        </Button>
+                                    </InlineUIContainer>
+                                    <InlineUIContainer>
+                                        <Button x:Name="btn_Friet" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF111213" Click="btn_Friet_Click">
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="images/fries.jpg"/>
+                                            </Button.Background>
+                                        </Button>
+                                    </InlineUIContainer>
+                                    <InlineUIContainer>
+                                        <Button x:Name="btn_Twix" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" BorderBrush="#FF09090A" BorderThickness="2" Click="btn_Twix_Click" >
+
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="images/twix-bar1.jpg"/>
+                                            </Button.Background>
+                                        </Button>
+                                    </InlineUIContainer>
+                                </Paragraph>
+                            </TableCell>
+
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                <Paragraph>
+                                    <InlineUIContainer>
+                                        <materialDesign:PackIcon Kind="Grade" Height="50" Width="50" Margin="10" Foreground="Black"/>
+                                    </InlineUIContainer>
+                                </Paragraph>
+                            </TableCell>
+
+                            <TableCell>
+                                <Paragraph>
+                                    <InlineUIContainer>
+                                        <Button x:Name="btn_Banaan" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF09090A" Click="btn_Banaan_Click" >
+
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="images/61fZ+YAYGaL._SX679_.jpg"/>
+                                            </Button.Background>
+                                        </Button>
+                                    </InlineUIContainer>
+                                    <InlineUIContainer>
+                                        <Button x:Name="btn_Salade" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF14181B" Click="btn_Salade_Click">
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="images/salad.jpg"/>
+                                            </Button.Background>
+
+
+                                        </Button>
+                                    </InlineUIContainer>
+                                    <InlineUIContainer>
+                                        <Button x:Name="btn_Garnalen" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF09090A" Click="btn_Garnalen_Click"   >
+
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="images/garnalen.jpg"/>
+                                            </Button.Background>
+                                        </Button>
+                                    </InlineUIContainer>
+                                    <InlineUIContainer>
+                                        <Button x:Name="btn_Kaas" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80"  BorderThickness="2" BorderBrush="#FF17191B" Click="btn_Kaas_Click">
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="images/kaas.jpg"/>
+                                            </Button.Background>
+
+                                        </Button>
+                                    </InlineUIContainer>
+                                </Paragraph>
+                            </TableCell>
+
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <InlineUIContainer>
+                                        <materialDesign:PackIcon Kind="Grade" Height="50" Width="50" Margin="10" Foreground="Black"/>
+                                    </InlineUIContainer>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <InlineUIContainer>
+                                        <Button x:Name="btn_VegaBurger" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF16191B" Click="btn_VegaBurger_Click">
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="images/vegburger.jpg"/>
+                                            </Button.Background>
+                                        </Button>
+                                    </InlineUIContainer>
+                                    <InlineUIContainer>
+                                        <Button x:Name="btn_Brocolli" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF161B1F" Click="btn_Brocolli_Click">
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="images/brocolli.png"/>
+                                            </Button.Background>
+
+
+
+                                        </Button>
+                                    </InlineUIContainer>
+                                    <InlineUIContainer>
+                                        <Button x:Name="btn_Kiwi" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" BorderBrush="#FF09090A" BorderThickness="2" Click="btn_Kiwi_Click" >
+
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="images/kiwi.jpg"/>
+                                            </Button.Background>
+                                        </Button>
+                                    </InlineUIContainer>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                    </TableRowGroup>
+                </Table>
+                <Paragraph/>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <Button Content="Verwijderen" Height="Auto" Margin="729,139,161,353" Background="#FF08CD08" Foreground="#FF191616" BorderBrush="Black"/>
+        <Button Content="Verwijderen" Height="Auto" Margin="729,227,161,265" Background="#FF08CD08" Foreground="#FF191616" BorderBrush="Black"/>
+        <Button Content="Verwijderen" Height="Auto" Margin="729,301,161,191" Background="#FF08CD08" Foreground="#FF191616" BorderBrush="Black"/>
+    </Grid>
+</UserControl>
