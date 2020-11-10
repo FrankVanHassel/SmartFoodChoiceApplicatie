@@ -21,22 +21,22 @@ namespace SmartFoodChoice
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\SmartFoodChoice.mdf;Integrated Security=True");
+            SqlConnection sqlCon = new SqlConnection(Properties.Settings.Default.ConnectionString);
             try
             {
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
-                String query = "SELECT COUNT(1) FROM tbl_login WHERE Username=@Username AND Password=@Password";
+                String query = "SELECT UserID FROM tbl_login WHERE Username=@Username AND Password=@Password";
                 SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                 sqlCmd.CommandType = CommandType.Text;
                 sqlCmd.Parameters.AddWithValue("@Username", txtUsername.Text);
                 sqlCmd.Parameters.AddWithValue("@Password", txtPassword.Password);
-                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-                if (count == 1)
+                int userId = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                if (userId > 0)
                 {
                     MessageBox.Show("Welkom Gebruiker");
                     Application.Current.Resources.Add("UserName", txtUsername.Text);
-                    Application.Current.Resources.Add("UserId", 1);
+                    Application.Current.Resources.Add("UserId", userId);
                     MainWindow gebruiker = new MainWindow();
                     gebruiker.Show();
                     this.Close();
