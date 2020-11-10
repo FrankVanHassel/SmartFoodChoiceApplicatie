@@ -35,13 +35,6 @@ namespace SmartFoodChoice
             this.Lijst.Items.Add(item);
         }
 
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
-
         //private void btn_Burger_Click(object sender, RoutedEventArgs e)
         //{
         //    Lijst.Items.Add("Burger - 30,7");
