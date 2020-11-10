@@ -1881,7 +1881,7 @@ SELECT UserID, UserName, Password, Recht FROM tbl_Login WHERE (UserID = @UserID)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::SmartFoodChoice.Properties.Settings.Default.ExcellentTasteConnectionString;
+            this._connection.ConnectionString = global::SmartFoodChoice.Properties.Settings.Default.ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2274,7 +2274,7 @@ SELECT Product_ID, Smiley, [Datum en Tijd], Productnaam, [CO-2 uitstoot] FROM tb
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::SmartFoodChoice.Properties.Settings.Default.ExcellentTasteConnectionString;
+            this._connection.ConnectionString = global::SmartFoodChoice.Properties.Settings.Default.ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2670,7 +2670,7 @@ SELECT Id, Product_ID, [Datum en Tijd], User_ID FROM tbl_Mapping WHERE (Id = @Id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::SmartFoodChoice.Properties.Settings.Default.ExcellentTasteConnectionString;
+            this._connection.ConnectionString = global::SmartFoodChoice.Properties.Settings.Default.ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

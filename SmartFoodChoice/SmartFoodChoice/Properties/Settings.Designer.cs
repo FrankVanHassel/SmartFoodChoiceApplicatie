@@ -28,9 +28,9 @@ namespace SmartFoodChoice.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\SmartFoodChoi" +
             "ce.mdf;Integrated Security=True")]
-        public string ExcellentTasteConnectionString {
+        public string ConnectionString {
             get {
-                return ((string)(this["ExcellentTasteConnectionString"]));
+                return ((string)(this["ConnectionString"]));
             }
         }
     }

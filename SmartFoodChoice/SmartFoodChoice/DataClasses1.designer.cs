@@ -39,7 +39,7 @@ namespace SmartFoodChoice
     #endregion
 		
 		public DataClasses1DataContext() : 
-				base(global::SmartFoodChoice.Properties.Settings.Default.ExcellentTasteConnectionString, mappingSource)
+				base(global::SmartFoodChoice.Properties.Settings.Default.ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

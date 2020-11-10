@@ -139,7 +139,7 @@ namespace SmartFoodChoice
 
             int userId = Convert.ToInt32(Application.Current.Resources["UserId"]);
 
-            using (SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\SmartFoodChoice.mdf;Integrated Security=True"))
+            using (SqlConnection sqlCon = new SqlConnection(Properties.Settings.Default.ConnectionString))
             {
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
