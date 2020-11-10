@@ -32,7 +32,7 @@ namespace SmartFoodChoice
                 sqlCmd.Parameters.AddWithValue("@Username", txtUsername.Text);
                 sqlCmd.Parameters.AddWithValue("@Password", txtPassword.Password);
                 int userId = Convert.ToInt32(sqlCmd.ExecuteScalar());
-                if (userId > 0)
+                if (userId == 1)
                 {
                     MessageBox.Show("Welkom Gebruiker");
                     Application.Current.Resources.Add("UserName", txtUsername.Text);
@@ -41,7 +41,16 @@ namespace SmartFoodChoice
                     gebruiker.Show();
                     this.Close();
                 }
-                else
+                else if (userId == 2)
+                {
+                    MessageBox.Show("Welkom Admin");
+                    Application.Current.Resources.Add("UserName", txtUsername.Text);
+                    Application.Current.Resources.Add("UserId", userId);
+                    Adminwindow admin = new Adminwindow();
+                    admin.Show();
+                    this.Close();
+                }
+                    else
                 {
                     MessageBox.Show("Gebruikersnaam of wachtwoord is onjuist!");
                 }

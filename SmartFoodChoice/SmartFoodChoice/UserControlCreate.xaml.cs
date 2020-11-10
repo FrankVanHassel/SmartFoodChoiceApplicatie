@@ -21,10 +21,10 @@ namespace SmartFoodChoice
         {
             InitializeComponent();
             List<Item> list = new List<Item>();
-            list.Add(new Item { ProductId = 1, CO2Value = 30, Productnaam = "A", Smiley = "Sad", Image = "images/burger.png" });
-            list.Add(new Item { ProductId = 2, CO2Value = 40, Productnaam = "B", Smiley = "Sad", Image = "images/burger.png" });
-            list.Add(new Item { ProductId = 3, CO2Value = 50, Productnaam = "C", Smiley = "Sad", Image = "images/burger.png" });
-            list.Add(new Item { ProductId = 4, CO2Value = 60.4, Productnaam = "D", Smiley = "Sad", Image = "images/burger.png" });
+            list.Add(new Item { ProductId = 1, CO2Value = 30.7 , Productnaam = "Burger", Smiley = "Sad", Image = "images/burgerr.jpg" });
+            list.Add(new Item { ProductId = 2, CO2Value = 4.1, Productnaam = "Vegaburger", Smiley = "Sad", Image = "images/burger.png" });
+            list.Add(new Item { ProductId = 3, CO2Value = 6.4, Productnaam = "Kip", Smiley = "Sad", Image = "images/burger.png" });
+            list.Add(new Item { ProductId = 4, CO2Value = 57.9, Productnaam = "Biefstuk", Smiley = "Sad", Image = "images/burger.png" });
             this.overzichtList.ItemsSource = list;
 
         }

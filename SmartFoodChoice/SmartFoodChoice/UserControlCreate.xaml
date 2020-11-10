@@ -45,7 +45,7 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>           
             </ListBox>
-            <Button x:Name="toevoegen_btn"  Content="Bereken CO-2 uitstoot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="186" Click="Button_Click_toevoegen" Height="70" Background="#FF08CD08" BorderBrush="#FF0C0F0D" Foreground="#FF0E0B0B" FontFamily="Arial" FontSize="15" RenderTransformOrigin="0.5,0.5">
+            <Button x:Name="toevoegen_btn"  Content="Bereken CO-2 uitstoot" Width="186" Click="Button_Click_toevoegen" Height="70" Background="#FF08CD08" BorderBrush="#FF0C0F0D" Foreground="#FF0E0B0B" FontFamily="Arial" FontSize="15" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
