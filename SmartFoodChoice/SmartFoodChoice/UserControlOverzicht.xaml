@@ -7,7 +7,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
             >
     <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="#FFDEDEDE" >
-        <DataGrid Name="datagrid">
+        <DataGrid Name="datagrid" Margin="104,54,103,66">
             
         </DataGrid>
         <!--<FlowDocumentScrollViewer Margin="163,33,68,32">

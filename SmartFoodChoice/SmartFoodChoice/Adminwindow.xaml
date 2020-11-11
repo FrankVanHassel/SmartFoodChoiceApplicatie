@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SmartFoodChoice"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d" Height="600" Width="1080" Foreground="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
-    <Window.Resources>
+        <Window.Resources>
         <Storyboard x:Key="OpenMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
                 <EasingDoubleKeyFrame KeyTime="0" Value="70"/>
@@ -84,20 +84,20 @@
                     </ListViewItem>
                     <ListViewItem x:Name="ItemCreate" Height="60">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="PencilBox" Height="25" Width="36" Margin="10" Foreground="White"/>
+                            <materialDesign:PackIcon Kind="PlusBox" Height="25" Width="36" Margin="10" Foreground="White"/>
                             <TextBlock Text="Maak je lijstje" VerticalAlignment="Center" Margin="5 10" Foreground="#FFFFFFFF"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem  x:Name="Overzicht" Height="60">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="SmileyHappy" Height="25" Width="36" Margin="10" Foreground="White"/>
+                            <materialDesign:PackIcon Kind="Edit" Height="25" Width="36" Margin="10" Foreground="White"/>
                             <TextBlock Text="Overzicht" VerticalAlignment="Center"  Margin="5 10" Foreground="#FFFFFFFF"/>
                         </StackPanel>
                     </ListViewItem>
 
                     <ListViewItem x:Name="Favoriet" Height="60">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="Grade" Height="25" Width="36" Margin="10" Foreground="White"/>
+                            <materialDesign:PackIcon Kind="TrashCanOutline" Height="25" Width="36" Margin="10" Foreground="White"/>
                             <TextBlock Text="Favorieten Producten" VerticalAlignment="Center"  Margin="5 10" Foreground="#FFFFFFFF"/>
                         </StackPanel>
                     </ListViewItem>
@@ -108,3 +108,4 @@
         <Grid Background="#1bff00" HorizontalAlignment="Left" Width="5" Margin="0,-1,0,0"/>
     </Grid>
 </Window>
+
