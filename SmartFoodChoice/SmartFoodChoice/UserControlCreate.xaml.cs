@@ -42,10 +42,7 @@ namespace SmartFoodChoice
                             var product = new Item
                             {
                                 Image = reader["ImageSource"].ToString(),
-                                CO2Value = 3,
-                                // todo: no idea what the column name is, throws an error,
-                                // just replace it with the actual column name
-                                // CO2Value = (double)reader["CO-2 uitstott"],
+                                CO2Value = Convert.ToDouble(reader["CO-2 uitstoot"]),
                                 ProductId = (int)reader["Product_ID"],
                                 Productnaam = reader["Productnaam"].ToString(),
                                 Smiley = reader["Smiley"].ToString(),
