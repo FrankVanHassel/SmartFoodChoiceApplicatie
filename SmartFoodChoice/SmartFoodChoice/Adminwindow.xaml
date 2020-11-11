@@ -4,9 +4,108 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmartFoodChoice"
-        mc:Ignorable="d"
-        Title="Adminwindow" Height="450" Width="800">
-    <Grid>
-        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="600" Width="1080" Foreground="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        <Window.Resources>
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="70"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="70"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
+            <BeginStoryboard Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid Background="#FFDEDEDE">
+        <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010">
+            <Label Content="Welkom Admin!" HorizontalAlignment="Left" Margin="159,34,0,0" VerticalAlignment="Top" Width="676" FontFamily="Arial" FontWeight="Bold" FontSize="36" HorizontalContentAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" Margin="226,390,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="124" Width="546" Foreground="#FF271F1F" FontFamily="Arial" FontSize="20" TextDecorations="{x:Null}" TextAlignment="Center"><Run Text="In deze app kunt u aangeven wat u wilt gaan eten. "/><LineBreak/><Run Text="Als u dit heeft gedaan krijgt u te zien wat uw keuzes zijn en hoeveel CO-2 er wordt uitgestoten aan de hand van uw beslissing."/></TextBlock>
+            <Image HorizontalAlignment="Left" Height="302" Margin="285,88,0,0" VerticalAlignment="Top" Width="422" Source="images/logo.png"/>
+
+
+
+        </Grid>
+        <Grid Height="77" VerticalAlignment="Top" Background="#FF0C131A" Margin="0,-1,0,0">
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#0c131a"/>
+            </Grid.Effect>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Name="txtUsername" VerticalAlignment="Center" FontSize="16"/>
+                <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" StaysOpen="True" Margin="10">
+                    <StackPanel Width="150">
+                        <Separator/>
+                        <Button Content="Logout" Click="Logoutclick"/>
+                    </StackPanel>
+                </materialDesign:PopupBox>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" Foreground="White">SmartFoodChoice</TextBlock>
+        </Grid>
+        <Grid x:Name="GridMenu" Width="70" HorizontalAlignment="Left" Background="#0c131a">
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="1" Color="#FFAEAEAE"/>
+            </Grid.Effect>
+            <StackPanel>
+                <Grid Height="150" Background="#FF0C131A" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Button x:Name="ButtonOpenMenu" Height="60" Width="65" Margin="0,5,0,0" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" BorderBrush="{x:Null}" Foreground="White" Click="ButtonOpenMenu_Click" Background="{x:Null}">
+                        <materialDesign:PackIcon Kind="Menu" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="ButtonCloseMenu" Visibility="Collapsed" Height="60" Width="60" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFFFFFF" Click="ButtonCloseMenu_Click">
+                        <materialDesign:PackIcon Kind="ArrowLeft" Width="25" Height="25"/>
+                    </Button>
+
+                    <Image Height="80" VerticalAlignment="Bottom"/>
+                </Grid>
+                <ListView x:Name="ListViewMenu" Foreground="#FF5C99D6" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListViewMenu_SelectionChanged">
+                    <ListViewItem x:Name="ItemHome" Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Home" Height="25" Width="36" Margin="10" Foreground="White"/>
+                            <TextBlock Text="Home" VerticalAlignment="Center" Margin="5 10" Foreground="#FFFFFFFF"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem x:Name="ItemCreate" Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="PlusBox" Height="25" Width="36" Margin="10" Foreground="White"/>
+                            <TextBlock Text="Maak je lijstje" VerticalAlignment="Center" Margin="5 10" Foreground="#FFFFFFFF"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem  x:Name="Overzicht" Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Edit" Height="25" Width="36" Margin="10" Foreground="White"/>
+                            <TextBlock Text="Overzicht" VerticalAlignment="Center"  Margin="5 10" Foreground="#FFFFFFFF"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="Favoriet" Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="TrashCanOutline" Height="25" Width="36" Margin="10" Foreground="White"/>
+                            <TextBlock Text="Favorieten Producten" VerticalAlignment="Center"  Margin="5 10" Foreground="#FFFFFFFF"/>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+        </Grid>
+        <Grid Height="5" VerticalAlignment="Top" Background="#1bff00" Margin="0,-1,0,0"/>
+        <Grid Background="#1bff00" HorizontalAlignment="Left" Width="5" Margin="0,-1,0,0"/>
     </Grid>
 </Window>
+
