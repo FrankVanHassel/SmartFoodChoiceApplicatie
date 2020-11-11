@@ -72,8 +72,7 @@
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
-                                <TextBlock Text="{Binding Path=Produuctnaam}" />
-                                <TextBlock Text="{Binding Path=CO2Value}"/>
+                                <TextBlock Text="{Binding Path=DisplayValue}" />                                
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>

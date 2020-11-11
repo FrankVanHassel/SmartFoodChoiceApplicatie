@@ -7,5 +7,13 @@
         public string Productnaam { get; set; }
         public double CO2Value { get; set; }
         public string Image { get; set; }
+
+        public string DisplayValue
+        {
+            get
+            {
+                return $"{Productnaam} - {CO2Value}";
+            }
+        }
     }
 }
