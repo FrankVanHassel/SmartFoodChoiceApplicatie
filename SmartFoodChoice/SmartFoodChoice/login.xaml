@@ -31,6 +31,6 @@
         <Button Margin="87,450,87,18" Background="#FF0C161F" BorderBrush="#FF0C161F" FontWeight="Normal" FontFamily="Arial" Click="Button_Click">
             <TextBlock TextWrapping="Wrap">Wachtwoord vergeten?</TextBlock>
         </Button>
-        <Image Source="Images/smartfoodchoice.png" Height="158" VerticalAlignment="Top" Margin="86,49,87,0"/>
+        <Image Source="logo.png" Height="199" VerticalAlignment="Top" Margin="57,10,57,0"/>
     </Grid>
 </Window>

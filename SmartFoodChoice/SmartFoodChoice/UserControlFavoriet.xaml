@@ -93,7 +93,7 @@
                                         <Button x:Name="btn_Banaan" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" BorderThickness="2" BorderBrush="#FF09090A" Click="btn_Banaan_Click" >
 
                                             <Button.Background>
-                                                <ImageBrush ImageSource="images/61fZ+YAYGaL._SX679_.jpg"/>
+                                                <ImageBrush ImageSource="images/banaan.jpg"/>
                                             </Button.Background>
                                         </Button>
                                     </InlineUIContainer>

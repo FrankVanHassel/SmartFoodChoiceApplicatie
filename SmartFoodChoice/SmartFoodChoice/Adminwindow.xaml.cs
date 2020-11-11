@@ -64,10 +64,5 @@ namespace SmartFoodChoice
             MessageBox.Show("U bent nu uitgelogd.", "SmartFoodChoice", MessageBoxButton.OK, MessageBoxImage.Stop);
             this.Close();
         }
-
-        private void Logoutclick(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

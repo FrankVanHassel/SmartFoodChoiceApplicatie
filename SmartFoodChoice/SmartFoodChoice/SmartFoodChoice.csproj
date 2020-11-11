@@ -105,9 +105,6 @@
       <DependentUpon>login.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Item.cs" />
-    <Compile Include="UserControladdproduct.xaml.cs">
-      <DependentUpon>UserControladdproduct.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControlCreate.xaml.cs">
       <DependentUpon>UserControlCreate.xaml</DependentUpon>
     </Compile>
@@ -140,10 +137,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControladdproduct.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UserControlCreate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -231,6 +224,8 @@
     <Resource Include="Images\tomaat.png" />
     <Resource Include="Images\twix-bar1.jpg" />
     <Resource Include="Images\vegburger.jpg" />
+    <Resource Include="logo.png" />
+    <Resource Include="Images\banaan.jpg" />
     <Content Include="SmartFoodChoice.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

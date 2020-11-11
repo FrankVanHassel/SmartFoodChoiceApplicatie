@@ -60,6 +60,7 @@ namespace SmartFoodChoice
         {
             var item = (Item)(sender as Button).DataContext;
             this.Lijst.Items.Add(item);
+
         }           
 
         private void btn_ClearList_Click(object sender, RoutedEventArgs e)

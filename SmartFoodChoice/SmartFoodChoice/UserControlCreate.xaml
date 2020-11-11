@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
             >
-    <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="#FFDEDEDE">     
+    <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="#FFDEDEDE">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="15" />
@@ -64,11 +64,11 @@
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <Button  x:Name="btn_ClearList" Content="Clear list" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="31" Click="btn_ClearList_Click" Background="#FF08CD08" BorderBrush="Black" Foreground="#FF191515"/>
-                    <Button Grid.Column="1" x:Name="btn_Remove" Content="Remove" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="31" Click="btn_Remove_Click" Background="#FF08CD08" BorderBrush="#FF050506" Foreground="#FF0C0A0A"/>
+                    <Button  x:Name="btn_ClearList" Content="Clear list" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Height="31" Click="btn_ClearList_Click" Background="#FF08CD08" BorderBrush="Black" Foreground="#FF191515" Margin="10,36,0,0"/>
+                    <Button x:Name="btn_Remove" Content="Remove" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="31" Click="btn_Remove_Click" Background="#FF08CD08" BorderBrush="#FF050506" Foreground="#FF0C0A0A" Grid.ColumnSpan="2" Margin="108,36,0,0"/>
                 </Grid>
 
-                <ListBox Grid.Row="1" x:Name="Lijst" HorizontalAlignment="Left" Height="320" VerticalAlignment="Top" Width="186"  FontFamily="Arial" Background="#FFEAE2E2" Foreground="Black" BorderBrush="#FF08CD08" BorderThickness="5">
+                <ListBox Grid.Row="1" x:Name="Lijst" HorizontalAlignment="Left" Height="320" VerticalAlignment="Top" Width="186"  FontFamily="Arial" Background="#FFEAE2E2" Foreground="Black" BorderBrush="#FF08CD08" BorderThickness="5" Margin="10,5,0,0">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
@@ -78,7 +78,7 @@
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
-                <Button x:Name="toevoegen_btn" Grid.Row="1"  Content="Bereken CO-2 uitstoot" Width="185" Click="Button_Click_toevoegen" Height="70" Background="#FF08CD08" BorderBrush="#FF0C0F0D" Foreground="#FF0E0B0B" FontFamily="Arial" FontSize="15" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,338,0,0">
+                <Button x:Name="toevoegen_btn" Grid.Row="1"  Content="Bereken CO-2 uitstoot" Width="186" Click="Button_Click_toevoegen" Height="70" Background="#FF08CD08" BorderBrush="#FF0C0F0D" Foreground="#FF0E0B0B" FontFamily="Arial" FontSize="15" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,331,0,0">
                     <Button.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
