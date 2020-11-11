@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SmartFoodChoice.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SmartFoodChoice.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_LoginTableAdapter" GeneratorDataComponentClassName="tbl_LoginTableAdapter" Name="tbl_Login" UserDataComponentName="tbl_LoginTableAdapter">
@@ -200,7 +200,7 @@ SELECT Id, Product_ID, [Datum en Tijd], User_ID FROM tbl_Mapping WHERE (Id = @Id
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tbl_Login" msprop:Generator_TableClassName="tbl_LoginDataTable" msprop:Generator_TableVarName="tabletbl_Login" msprop:Generator_TablePropName="tbl_Login" msprop:Generator_RowDeletingName="tbl_LoginRowDeleting" msprop:Generator_RowChangingName="tbl_LoginRowChanging" msprop:Generator_RowEvHandlerName="tbl_LoginRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_LoginRowDeleted" msprop:Generator_UserTableName="tbl_Login" msprop:Generator_RowChangedName="tbl_LoginRowChanged" msprop:Generator_RowEvArgName="tbl_LoginRowChangeEvent" msprop:Generator_RowClassName="tbl_LoginRow">
+        <xs:element name="tbl_Login" msprop:Generator_TableClassName="tbl_LoginDataTable" msprop:Generator_TableVarName="tabletbl_Login" msprop:Generator_RowChangedName="tbl_LoginRowChanged" msprop:Generator_TablePropName="tbl_Login" msprop:Generator_RowDeletingName="tbl_LoginRowDeleting" msprop:Generator_RowChangingName="tbl_LoginRowChanging" msprop:Generator_RowEvHandlerName="tbl_LoginRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_LoginRowDeleted" msprop:Generator_RowClassName="tbl_LoginRow" msprop:Generator_UserTableName="tbl_Login" msprop:Generator_RowEvArgName="tbl_LoginRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" msprop:Generator_UserColumnName="UserID" type="xs:int" />
@@ -228,7 +228,7 @@ SELECT Id, Product_ID, [Datum en Tijd], User_ID FROM tbl_Mapping WHERE (Id = @Id
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_Overzicht" msprop:Generator_TableClassName="tbl_OverzichtDataTable" msprop:Generator_TableVarName="tabletbl_Overzicht" msprop:Generator_TablePropName="tbl_Overzicht" msprop:Generator_RowDeletingName="tbl_OverzichtRowDeleting" msprop:Generator_RowChangingName="tbl_OverzichtRowChanging" msprop:Generator_RowEvHandlerName="tbl_OverzichtRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_OverzichtRowDeleted" msprop:Generator_UserTableName="tbl_Overzicht" msprop:Generator_RowChangedName="tbl_OverzichtRowChanged" msprop:Generator_RowEvArgName="tbl_OverzichtRowChangeEvent" msprop:Generator_RowClassName="tbl_OverzichtRow">
+        <xs:element name="tbl_Overzicht" msprop:Generator_TableClassName="tbl_OverzichtDataTable" msprop:Generator_TableVarName="tabletbl_Overzicht" msprop:Generator_RowChangedName="tbl_OverzichtRowChanged" msprop:Generator_TablePropName="tbl_Overzicht" msprop:Generator_RowDeletingName="tbl_OverzichtRowDeleting" msprop:Generator_RowChangingName="tbl_OverzichtRowChanging" msprop:Generator_RowEvHandlerName="tbl_OverzichtRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_OverzichtRowDeleted" msprop:Generator_RowClassName="tbl_OverzichtRow" msprop:Generator_UserTableName="tbl_Overzicht" msprop:Generator_RowEvArgName="tbl_OverzichtRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Product_ID" msprop:Generator_ColumnVarNameInTable="columnProduct_ID" msprop:Generator_ColumnPropNameInRow="Product_ID" msprop:Generator_ColumnPropNameInTable="Product_IDColumn" msprop:Generator_UserColumnName="Product_ID" type="xs:int" />
@@ -257,7 +257,7 @@ SELECT Id, Product_ID, [Datum en Tijd], User_ID FROM tbl_Mapping WHERE (Id = @Id
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_Mapping" msprop:Generator_TableClassName="tbl_MappingDataTable" msprop:Generator_TableVarName="tabletbl_Mapping" msprop:Generator_RowChangedName="tbl_MappingRowChanged" msprop:Generator_TablePropName="tbl_Mapping" msprop:Generator_RowDeletingName="tbl_MappingRowDeleting" msprop:Generator_RowChangingName="tbl_MappingRowChanging" msprop:Generator_RowEvHandlerName="tbl_MappingRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_MappingRowDeleted" msprop:Generator_RowClassName="tbl_MappingRow" msprop:Generator_UserTableName="tbl_Mapping" msprop:Generator_RowEvArgName="tbl_MappingRowChangeEvent">
+        <xs:element name="tbl_Mapping" msprop:Generator_TableClassName="tbl_MappingDataTable" msprop:Generator_TableVarName="tabletbl_Mapping" msprop:Generator_TablePropName="tbl_Mapping" msprop:Generator_RowDeletingName="tbl_MappingRowDeleting" msprop:Generator_RowChangingName="tbl_MappingRowChanging" msprop:Generator_RowEvHandlerName="tbl_MappingRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_MappingRowDeleted" msprop:Generator_UserTableName="tbl_Mapping" msprop:Generator_RowChangedName="tbl_MappingRowChanged" msprop:Generator_RowEvArgName="tbl_MappingRowChangeEvent" msprop:Generator_RowClassName="tbl_MappingRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -284,8 +284,8 @@ SELECT Id, Product_ID, [Datum en Tijd], User_ID FROM tbl_Mapping WHERE (Id = @Id
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="tbl_Mapping_tbl_Overzicht" msdata:parent="tbl_Mapping" msdata:child="tbl_Overzicht" msdata:parentkey="Product_ID" msdata:childkey="Product_ID" msprop:Generator_UserChildTable="tbl_Overzicht" msprop:Generator_ChildPropName="Gettbl_OverzichtRows" msprop:Generator_UserRelationName="tbl_Mapping_tbl_Overzicht" msprop:Generator_ParentPropName="tbl_MappingRow" msprop:Generator_RelationVarName="relationtbl_Mapping_tbl_Overzicht" msprop:Generator_UserParentTable="tbl_Mapping" />
-      <msdata:Relationship name="tbl_Mapping_tbl_Login" msdata:parent="tbl_Mapping" msdata:child="tbl_Login" msdata:parentkey="User_ID" msdata:childkey="UserID" msprop:Generator_UserChildTable="tbl_Login" msprop:Generator_ChildPropName="Gettbl_LoginRows" msprop:Generator_UserRelationName="tbl_Mapping_tbl_Login" msprop:Generator_ParentPropName="tbl_MappingRow" msprop:Generator_RelationVarName="relationtbl_Mapping_tbl_Login" msprop:Generator_UserParentTable="tbl_Mapping" />
+      <msdata:Relationship name="tbl_Mapping_tbl_Overzicht" msdata:parent="tbl_Mapping" msdata:child="tbl_Overzicht" msdata:parentkey="Product_ID" msdata:childkey="Product_ID" msprop:Generator_UserChildTable="tbl_Overzicht" msprop:Generator_ChildPropName="Gettbl_OverzichtRows" msprop:Generator_UserRelationName="tbl_Mapping_tbl_Overzicht" msprop:Generator_RelationVarName="relationtbl_Mapping_tbl_Overzicht" msprop:Generator_UserParentTable="tbl_Mapping" msprop:Generator_ParentPropName="tbl_MappingRow" />
+      <msdata:Relationship name="tbl_Mapping_tbl_Login" msdata:parent="tbl_Mapping" msdata:child="tbl_Login" msdata:parentkey="User_ID" msdata:childkey="UserID" msprop:Generator_UserChildTable="tbl_Login" msprop:Generator_ChildPropName="Gettbl_LoginRows" msprop:Generator_UserRelationName="tbl_Mapping_tbl_Login" msprop:Generator_RelationVarName="relationtbl_Mapping_tbl_Login" msprop:Generator_UserParentTable="tbl_Mapping" msprop:Generator_ParentPropName="tbl_MappingRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
