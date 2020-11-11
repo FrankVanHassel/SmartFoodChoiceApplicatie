@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SmartFoodChoice
 {
     /// <summary>
-    /// Interaction logic for Adminwindow.xaml
+    /// Interaction logic for UserControladdproduct.xaml
     /// </summary>
-    public partial class Adminwindow : Window
+    public partial class UserControladdproduct : UserControl
     {
-        public Adminwindow()
+        public UserControladdproduct()
         {
             InitializeComponent();
-        }
-
-        private void Logoutclick(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
