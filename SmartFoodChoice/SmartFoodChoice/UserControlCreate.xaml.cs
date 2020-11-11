@@ -21,10 +21,15 @@ namespace SmartFoodChoice
         {
             InitializeComponent();
             List<Item> list = new List<Item>();
-            list.Add(new Item { ProductId = 1, CO2Value = 30.7 , Productnaam = "Burger", Smiley = "Sad", Image = "images/burgerr.jpg" });
-            list.Add(new Item { ProductId = 2, CO2Value = 4.1, Productnaam = "Vegaburger", Smiley = "Sad", Image = "images/burger.png" });
-            list.Add(new Item { ProductId = 3, CO2Value = 6.4, Productnaam = "Kip", Smiley = "Sad", Image = "images/burger.png" });
-            list.Add(new Item { ProductId = 4, CO2Value = 57.9, Productnaam = "Biefstuk", Smiley = "Sad", Image = "images/burger.png" });
+            list.Add(new Item { ProductId = 1, CO2Value = 30.7, Productnaam = "Burger", Smiley = "Sad", Image = "images/burgerr.jpg" });
+            list.Add(new Item { ProductId = 2, CO2Value = 4.1, Productnaam = "Vegaburger", Smiley = "Happy", Image = "images/vegburger.jpg" });
+            list.Add(new Item { ProductId = 3, CO2Value = 6.4, Productnaam = "Kip", Smiley = "Sad", Image = "images/kip.png" });
+            list.Add(new Item { ProductId = 4, CO2Value = 57.9, Productnaam = "Biefstuk", Smiley = "Sad", Image = "images/biefstuk.jpg" });
+            list.Add(new Item { ProductId = 5, CO2Value = 3.1, Productnaam = "Friet", Smiley = "Sad", Image = "images/fries.jpg" });
+            list.Add(new Item { ProductId = 6, CO2Value = 0.24, Productnaam = "Brocolli", Smiley = "Happy", Image = "images/brocolli.png" });
+            list.Add(new Item { ProductId = 7, CO2Value = 13.1, Productnaam = "Kaas", Smiley = "Sad", Image = "images/kaas.jpg" });
+            list.Add(new Item { ProductId = 8, CO2Value = 3.9, Productnaam = "Salade", Smiley = "Happy", Image = "images/salad.jpg" });
+            list.Add(new Item { ProductId = 9, CO2Value = 8.1, Productnaam = "Pizza", Smiley = "Happy", Image = "images/piza.jpg" });
             this.overzichtList.ItemsSource = list;
 
         }

@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" 
-            >
+             mc:Ignorable="d">
     <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="524" Width="1010" Background="#FFDEDEDE" RenderTransformOrigin="0.511,0.519">
         <WrapPanel Orientation="Vertical">
             <ItemsControl Name="overzichtList">
