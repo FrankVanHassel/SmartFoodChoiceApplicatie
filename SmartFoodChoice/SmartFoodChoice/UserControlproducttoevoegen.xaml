@@ -25,6 +25,8 @@
                     <StackPanel Orientation="Horizontal">
                         <Image Source="{Binding Img}" Width="50" Height="50"/>
                         <TextBlock Text="{Binding ImgName}"/>
+                        <Image Width="65" Height="65" Stretch="Fill" Source="{Binding Photo}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,15,0"/>
+                        <Label Content="{Binding Name}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
                     </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
