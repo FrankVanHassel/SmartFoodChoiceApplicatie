@@ -19,8 +19,15 @@
         <Button Content="Browse" Height="27" HorizontalAlignment="Left" Margin="508,344,0,0" Name="btnBrowse" VerticalAlignment="Top" Width="88" Click="btnBrowse_Click" />
         <Image Height="66" HorizontalAlignment="Left" Margin="620,323,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="130" />
         <Button x:Name="Invoer_btn" Background="#FF08CD08" BorderBrush="#FF050506" Foreground="#FF0C0A0A" Content="product invoeren" HorizontalAlignment="Left" Margin="508,423,0,0" VerticalAlignment="Top" Width="271" Height="43" FontSize="22" FontWeight="Bold" FontFamily="Verdana" Click="button_Click_1"/>
-        <Button Content="Browse" Height="27" HorizontalAlignment="Left" Margin="508,239,0,0" x:Name="btnBrowse1" VerticalAlignment="Top" Width="88" Click="btnBrowse_Click1" />
-        <Image Height="66" HorizontalAlignment="Left" Margin="620,223,0,0" x:Name="image1_Copy" Stretch="Fill" VerticalAlignment="Top" Width="130" />
-
+        <ComboBox x:Name="Combobox" ItemsSource="{Binding Images}" Margin="512,240,285,256" SelectionChanged="Combobox_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding Img}" Width="50" Height="50"/>
+                        <TextBlock Text="{Binding ImgName}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
     </Grid>
 </UserControl>

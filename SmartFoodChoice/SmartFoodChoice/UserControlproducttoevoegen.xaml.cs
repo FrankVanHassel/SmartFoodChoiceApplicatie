@@ -54,26 +54,8 @@ namespace SmartFoodChoice
             co2uitstoot_tbx.Text = string.Empty;
         }
 
-        private void btnBrowse_Click1(object sender, RoutedEventArgs e)
+        private void Combobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            try
-            {
-                FileDialog fldlg = new OpenFileDialog();
-                fldlg.InitialDirectory = Environment.SpecialFolder.MyPictures.ToString();
-                fldlg.Filter = "Image File (*png;*.jpg;*.bmp;*.gif)|*png;*.jpg;*.bmp;*.gif";
-                fldlg.ShowDialog();
-                {
-                    strName = fldlg.SafeFileName;
-                    imageName = fldlg.FileName;
-                    ImageSourceConverter isc = new ImageSourceConverter();
-                    image1_Copy.SetValue(Image.SourceProperty, isc.ConvertFromString(imageName));
-                }
-                fldlg = null;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString());
-            }
 
         }
 
