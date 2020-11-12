@@ -12,7 +12,7 @@
         {
             get
             {
-                return $"{Productnaam} - {CO2Value}";
+                return $"{Productnaam} - {CO2Value}kg CO-2";
             }
         }
     }

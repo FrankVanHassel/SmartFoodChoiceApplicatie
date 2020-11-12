@@ -95,7 +95,7 @@ namespace SmartFoodChoice
                 sqlCon.Close();
             }
 
-            MessageBox.Show("Aantal kilo CO-2 uitstoot: " + sum.ToString());
+            MessageBox.Show("Aantal kilogram CO-2 uitstoot: " + sum.ToString());
         }
 
         private void btn_Remove_Click(object sender, RoutedEventArgs e)

@@ -16,7 +16,7 @@
         <Label x:Name="productimage_lbl" Content="Product image" HorizontalAlignment="Left" Margin="255,337,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Verdana"/>
         <TextBox x:Name="productnaam_tbx" HorizontalAlignment="Left" Height="35" Margin="512,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" FontSize="22" TextChanged="textBox_TextChanged" Foreground="Black" Background="{x:Null}"/>
         <TextBox x:Name="co2uitstoot_tbx" HorizontalAlignment="Left" Height="35" Margin="512,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" FontSize="22" Foreground="Black"/>
-        <Button Content="Browse" Height="27" HorizontalAlignment="Left" Margin="508,344,0,0" Name="btnBrowse" VerticalAlignment="Top" Width="88" Click="btnBrowse_Click" />
+        <Button Content="Zoek" Height="27" HorizontalAlignment="Left" Margin="508,344,0,0" Name="btnBrowse" VerticalAlignment="Top" Width="88" Click="btnBrowse_Click" />
         <Image Height="66" HorizontalAlignment="Left" Margin="620,323,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="130" />
         <Button x:Name="Invoer_btn" Background="#FF08CD08" BorderBrush="#FF050506" Foreground="#FF0C0A0A" Content="product invoeren" HorizontalAlignment="Left" Margin="508,423,0,0" VerticalAlignment="Top" Width="271" Height="43" FontSize="22" FontWeight="Bold" FontFamily="Verdana" Click="button_Click_1"/>
         <ComboBox x:Name="Combobox" ItemsSource="{Binding Images}" Margin="512,240,285,256" SelectionChanged="Combobox_SelectionChanged">

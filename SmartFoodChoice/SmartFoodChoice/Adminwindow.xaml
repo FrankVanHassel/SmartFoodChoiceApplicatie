@@ -46,7 +46,7 @@
                 <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" StaysOpen="True" Margin="10">
                     <StackPanel Width="150">
                         <Separator/>
-                        <Button Content="Logout" Click="Logoutclick"/>
+                        <Button Content="Uitloggen" Click="Logoutclick"/>
                     </StackPanel>
                 </materialDesign:PopupBox>
             </StackPanel>
