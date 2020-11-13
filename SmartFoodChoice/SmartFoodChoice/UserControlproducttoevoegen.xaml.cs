@@ -21,14 +21,21 @@ namespace SmartFoodChoice
     /// </summary>
     public partial class UserControlproducttoevoegen : UserControl
     {
+        // List<tbl_smiley> Smileylist = new List<tbl_smiley>();
+
         DataSet1 ds;
         string strName, imageName;
-        string constr = @"---------------------------- Connection String --------------------------";
+
         //Database connectie
         DataClasses1DataContext db = new DataClasses1DataContext();
         public UserControlproducttoevoegen()
         {
             InitializeComponent();
+            //    Employeedatalist.Add(new Employeedata { Smiley_Id = 1, Smileyimage = "Images/happy.png", Smileynaam = "Blije smiley" });
+            //    Employeedatalist.Add(new Employeedata { Smiley_Id = 2, Smileyimage = "Images/sad.png", Smileynaam = "Neutrale smiley" });
+            //    Employeedatalist.Add(new Employeedata { Smiley_Id = 3, Smileyimage = "Images/neutral.png", Smileynaam = "Verdrietige smiley" });
+            //    lstwithimg.ItemsSource = Smileylist;
+            //    lstwithimg.SelectedIndex = 0;
         }
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)

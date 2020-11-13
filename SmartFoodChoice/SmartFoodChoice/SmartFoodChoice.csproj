@@ -226,6 +226,9 @@
     <Resource Include="Images\vegburger.jpg" />
     <Resource Include="logo.png" />
     <Resource Include="Images\banaan.jpg" />
+    <Resource Include="Images\happy.png" />
+    <Resource Include="Images\neutral.png" />
+    <Resource Include="Images\sad.png" />
     <Content Include="SmartFoodChoice.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
