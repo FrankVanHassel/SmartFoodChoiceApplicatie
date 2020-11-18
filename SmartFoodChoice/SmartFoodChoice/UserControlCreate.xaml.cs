@@ -70,10 +70,7 @@ namespace SmartFoodChoice
 
         private void Button_Click_toevoegen(object sender, RoutedEventArgs e)
         {
-            var sum = Lijst.Items
-             .OfType<string>()
-             .Select(s => Convert.ToDouble(s.Split(new string[] { "-" }, StringSplitOptions.RemoveEmptyEntries)[1]))
-             .Sum();
+            double sum = 0;
 
             int userId = Convert.ToInt32(Application.Current.Resources["UserId"]);
 
@@ -91,6 +88,7 @@ namespace SmartFoodChoice
                     sqlCmd.Parameters.AddWithValue("@UserId", userId);
                     sqlCmd.Parameters.AddWithValue("@Date", DateTime.UtcNow);
                     sqlCmd.ExecuteNonQuery();
+                    sum += item.CO2Value;
                 }
                 sqlCon.Close();
             }
