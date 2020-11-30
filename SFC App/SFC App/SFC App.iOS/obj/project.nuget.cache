@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DIXGBDzrp6PuQWvHSfJaRxMaxQotnJ+MP1o1y2eipszcWDZ6oVIBrD73ZIhvJ3lP+UUrHjW1HG8Fo3oqYE/Mpg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App.iOS\\SFC App.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}
