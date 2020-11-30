@@ -19,7 +19,7 @@ namespace SFC_App.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "Browse Food";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
