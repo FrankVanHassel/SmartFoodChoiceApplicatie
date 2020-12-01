@@ -9,10 +9,15 @@ namespace SFC_App.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
+            Title = "Smart Food Choice";
         }
 
         public ICommand OpenWebCommand { get; }
+
+        private string appDescription = "This is simply the best app you have got to download pls give us money now.";
+        public string AppDescription
+        {
+            get { return appDescription; }
+        }
     }
 }

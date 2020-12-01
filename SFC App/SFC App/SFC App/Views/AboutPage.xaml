@@ -13,18 +13,27 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Accent">#96d1ff</Color>
-            <Color x:Key="AppGreen">#56FF00</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid BackgroundColor="#56FF00">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <Image Source="{local:ImageResource SFC_App.Images.banaan-vierkant.jpg}" ></Image>
+                <Image VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="300" HeightRequest="300" Source="{local:ImageResource SFC_App.Images.banaan-vierkant.jpg}"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label FontSize="18" VerticalOptions="End" HorizontalOptions="Center" TextColor="Black"
+                       Text="Maak de slimste keuze in eten!" />
+            </StackLayout>
+                <Label FontSize="13" VerticalOptions="End" HorizontalOptions="Center" TextColor="Black" Margin="30"
+                       Text="{Binding AppDescription}" />
+            <StackLayout>
+                
             </StackLayout>
         </StackLayout>
     </Grid>

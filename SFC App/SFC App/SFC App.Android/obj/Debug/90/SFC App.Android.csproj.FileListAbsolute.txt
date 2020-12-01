@@ -14,17 +14,7 @@ C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC A
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\_VerifyXamarinAndroidSupportVersions.stamp
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\res.flag
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\12\jl\files.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\13\jl\files.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\17\jl\files.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\19\jl\files.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\26\jl\files.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\30\jl\files.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\32\jl\files.cache
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\33\jl\files.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\34\jl\files.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\38\jl\files.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\39\jl\files.cache
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\R.txt
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\R.cs.flag
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\SFC App.Android.csproj.CoreCompileInputs.cache
@@ -493,3 +483,13 @@ C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC A
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\12\jl\files.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\13\jl\files.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\17\jl\files.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\19\jl\files.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\26\jl\files.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\30\jl\files.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\32\jl\files.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\34\jl\files.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\38\jl\files.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App.Android\obj\Debug\90\lp\39\jl\files.cache
