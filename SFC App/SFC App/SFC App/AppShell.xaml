@@ -86,7 +86,11 @@
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Overview">
-        <ShellContent Route="Overview" ContentTemplate="{DataTemplate local:OverviewPage}"/>
+        <ShellContent Route="OverviewPage" ContentTemplate="{DataTemplate local:OverviewPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Favorites">
+        <ShellContent Route="FavoritesPage" ContentTemplate="{DataTemplate local:FavoritesPage}"/>
+        <!--Add contenttemplate-->
     </FlyoutItem>
         
 

@@ -14,7 +14,7 @@
     <ContentPage.Content>
         
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Chosen products overview."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

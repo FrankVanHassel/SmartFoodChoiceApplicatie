@@ -18,3 +18,4 @@ C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC A
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Debug\netstandard2.0\ref\SFC App.dll
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Debug\netstandard2.0\SFC App.pdb
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Debug\netstandard2.0\Views\OverviewPage.xaml.g.cs
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Debug\netstandard2.0\Views\FavoritesPage.xaml.g.cs
