@@ -85,9 +85,8 @@
     <FlyoutItem Title="Browse Products" Icon="icon_feed.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Overzicht">
-        <ShellContent Route="Overzicht"/>
-        <!--Add ContentTemplate property to redirect user to new page-->
+    <FlyoutItem Title="Overview">
+        <ShellContent Route="Overview" ContentTemplate="{DataTemplate local:OverviewPage}"/>
     </FlyoutItem>
         
 

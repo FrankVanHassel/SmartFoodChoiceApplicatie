@@ -10,11 +10,7 @@
         <vm:AboutViewModel />
     </ContentPage.BindingContext>
     
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="Accent">#96d1ff</Color>
-        </ResourceDictionary>
-    </ContentPage.Resources>
+
 
     <Grid>
         <Grid.RowDefinitions>
@@ -23,14 +19,15 @@
         </Grid.RowDefinitions>
         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <Image VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="300" HeightRequest="300" Source="{local:ImageResource SFC_App.Images.banaan-vierkant.jpg}"/>
+                <Image VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="300" HeightRequest="300" Margin="20"
+                       Source="{local:ImageResource SFC_App.Images.banaan-vierkant.jpg}"/>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <Label FontSize="18" VerticalOptions="End" HorizontalOptions="Center" TextColor="Black"
+                <Label FontSize="20" VerticalOptions="End" HorizontalOptions="Center" 
                        Text="Maak de slimste keuze in eten!" />
             </StackLayout>
-                <Label FontSize="13" VerticalOptions="End" HorizontalOptions="Center" TextColor="Black" Margin="30"
+                <Label VerticalOptions="End" HorizontalOptions="Center" Margin="15"
                        Text="{Binding AppDescription}" />
             <StackLayout>
                 
