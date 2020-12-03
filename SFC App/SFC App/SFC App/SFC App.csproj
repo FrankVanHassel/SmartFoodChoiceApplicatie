@@ -13,10 +13,12 @@
 
   <ItemGroup>
     <None Remove="Images\banaan-vierkant.jpg" />
+    <None Remove="Images\banaantime.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Images\banaan-vierkant.jpg" />
+    <EmbeddedResource Include="Images\banaantime.png" />
   </ItemGroup>
 
   <ItemGroup>

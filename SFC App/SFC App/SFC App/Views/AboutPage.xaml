@@ -20,7 +20,7 @@
         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <Image VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="300" HeightRequest="300" Margin="20"
-                       Source="{local:ImageResource SFC_App.Images.banaan-vierkant.jpg}"/>
+                       Source="{local:ImageResource SFC_App.Images.banaantime.png}"/>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
