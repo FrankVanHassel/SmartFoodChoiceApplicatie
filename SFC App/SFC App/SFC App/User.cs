@@ -4,14 +4,27 @@ using System.Text;
 
 namespace SFC_App
 {
-    class User
+    public class User
     {
-        private int id;
-        public int totalCO2;
-        public string username;
-        public string email;
-        private string password;
 
+        public int id { get; }
+
+        public int totalCO2 { get; set; }
+
+        public string username { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
+
+
+        public User(int Id, int TotalCO2, string Username, string Email, string Password)
+        {
+            id = Id;
+            totalCO2 = TotalCO2;
+            username = Username;
+            email = Email;
+            password = Password;
+        }
+        
 
         // Makes it possible to change the username, returns false if name change failed. 
         public bool ChangeUsername(string newUsername, string newUsernameConfirm, string userPassword)
