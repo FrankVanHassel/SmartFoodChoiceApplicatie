@@ -7,20 +7,20 @@ using Xamarin.Forms.Xaml;
 
 namespace SFC_App
 {
-    [ContentProperty (nameof(source))]
+    [ContentProperty (nameof(Source))]
 
     class ImageResourceExtension : IMarkupExtension
     {
-        public string source { get; set; }
+        public string Source { get; set; }
 
         public object ProvideValue(IServiceProvider serviceProvider)
         {
-            if (source == null)
+            if (Source == null)
             {
                 return null;
             }
 
-            var imageSource = ImageSource.FromResource(source, typeof(ImageResourceExtension).GetTypeInfo().Assembly);
+            var imageSource = ImageSource.FromResource(Source, typeof(ImageResourceExtension).GetTypeInfo().Assembly);
             return imageSource;
         }
     }

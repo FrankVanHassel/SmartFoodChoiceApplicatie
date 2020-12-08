@@ -8,7 +8,6 @@
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="Primary">#30354F</Color>
-            
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
@@ -27,15 +26,6 @@
                         </VisualStateGroup>
                     </VisualStateGroupList>
                 </Setter>
-            </Style>
-            
-            <Style TargetType="Grid">
-                <Setter Property="BackgroundColor" Value="#56FF00"/>
-            </Style>
-
-            <Style TargetType="Label">
-                <Setter Property="FontSize" Value="15"/>
-                <Setter Property="TextColor" Value="Black"/>
             </Style>
         </ResourceDictionary>        
     </Application.Resources>
