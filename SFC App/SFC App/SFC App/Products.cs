@@ -6,22 +6,22 @@ namespace SFC_App
 {
 	public class Products
 	{
-		private int productID { get; };
-		private int energy { get; };
-		private int fat { get; };
-		private int carbonhydrates { get; };
-		private int sugar { get; };
-		private int protein { get; };
-		private int salts { get; };
-		private int sodium { get; };
+		private int productID { get; }
+		private int energy { get; }
+		private int fat { get; }
+		private int carbonhydrates { get; }
+		private int sugar { get; }
+		private int protein { get; }
+		private int salts { get; }
+		private int sodium { get; }
 
-		private Char nutrientScore { get; };
+		private Char nutrientScore { get; }
 
-		private String productName { get; };
+		private String productName { get; }
 
-		private bool isFavorite { get; set; };
+		private bool isFavorite { get; set; }
 
-		public Product(int ProductID, int Energy, int Fat, int Carbonhydrates, int Sugar, int Protein, int Salts, int Sodium, Char NutrientScore, String ProductName, bool IsFavorite)
+		public Products(int ProductID, int Energy, int Fat, int Carbonhydrates, int Sugar, int Protein, int Salts, int Sodium, Char NutrientScore, String ProductName, bool IsFavorite)
 		{
 			productID = ProductID;
 			energy = Energy;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I9FdDJ8tZ0x0CTvbXu2CPc48njSfUH3YzDZ/7PnXi/lNaobjmAKqTm7jfZEh6ftsLx80PZArjLz3tOUVRpZE4w==",
+  "dgSpecHash": "7zGqwR5nW+VaubQmx48DH+1E5oB5Q6yPHj1GKM7xwaRqaLlS4rsXoe1iCQ6fWXJ77RLe1t4+xmOclMPPAA4kPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App.Android\\SFC App.Android.csproj",
+  "projectFilePath": "C:\\Users\\SKIKK\\source\\repos\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App.Android\\SFC App.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

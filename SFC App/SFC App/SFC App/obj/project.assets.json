@@ -631,23 +631,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rik\\.nuget\\packages\\": {},
+    "C:\\Users\\SKIKK\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App\\SFC App.csproj",
+      "projectUniqueName": "C:\\Users\\SKIKK\\source\\repos\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App\\SFC App.csproj",
       "projectName": "SFC App",
-      "projectPath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App\\SFC App.csproj",
-      "packagesPath": "C:\\Users\\rik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App\\obj\\",
+      "projectPath": "C:\\Users\\SKIKK\\source\\repos\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App\\SFC App.csproj",
+      "packagesPath": "C:\\Users\\SKIKK\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SKIKK\\source\\repos\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\rik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SKIKK\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -699,7 +699,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
