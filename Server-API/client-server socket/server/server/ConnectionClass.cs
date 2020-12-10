@@ -8,11 +8,19 @@ namespace server
 {
     public class ConnectionClass
     {
-        public void sendData(string Data)
+        public void sendData(TcpClient client, TcpListener server, string Data)
         {
             byte[] dataArr = Encoding.ASCII.GetBytes(Data);
-
+           
             NetworkStream stream = client.GetStream();
+            client = server.AcceptTcpClient();
+
+            stream.Write(dataArr);
+        }
+
+        public string readData(TcpClient client, TcpListener server)
+        {
+            return "hoi";
         }
     }
 }
