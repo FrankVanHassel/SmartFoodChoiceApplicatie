@@ -13,11 +13,14 @@ namespace server
             string portStr = Console.ReadLine();           
             int port = Int32.Parse(portStr);
 
+            ConnectionClass connection = new ConnectionClass();
+
 
             // Set the IP address
             IPAddress serverIP = IPAddress.Parse("192.168.1.113");
             TcpListener server = new TcpListener(serverIP, port);
             TcpClient client = default(TcpClient);
+            
 
             try
             {
@@ -36,38 +39,18 @@ namespace server
             {
                 client = server.AcceptTcpClient();
 
-                byte[] receivedBuffer = new byte[100];
-                NetworkStream stream = client.GetStream();
-
-                // Read the received data from the client and store it in receivedBuffer.
-                stream.Read(receivedBuffer, 0, receivedBuffer.Length);
-
-                // Create a empty stringbuilder to build the message
-                StringBuilder clientMessage = new StringBuilder();
-
-                foreach(byte b in receivedBuffer)
-                {
-                    // 00 equals null, this is impossible for the user to put in their message. 
-                    if (b.Equals(00))   
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        // First complete the byte to a character, then to a string. Then append it in the message.
-                        clientMessage.Append(Convert.ToChar(b).ToString());     
-                    }
-                }
-
-                Console.WriteLine(clientMessage.ToString());
-
+                string clientMessage = connection.readData(client, server);
+              
+                Console.WriteLine(clientMessage);
 
                 // Inside this if statement could be a message that contains data from the database
                 if (clientMessage.ToString() == "response")
+                {                    
+                    connection.sendData(client, server, "response back");
+                }
+                else
                 {
-                    byte[] serverMessage = Encoding.ASCII.GetBytes("hello");
-
-                    stream.Write(serverMessage);
+                    connection.sendData(client, server, "no response");
                 }
             }
         }

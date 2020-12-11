@@ -8,3 +8,13 @@ C:\Users\Rik\OneDrive\Documenten\Fontys\Prof 2\client-server socket\client\clien
 C:\Users\Rik\OneDrive\Documenten\Fontys\Prof 2\client-server socket\client\client\obj\Debug\client.csproj.CoreCompileInputs.cache
 C:\Users\Rik\OneDrive\Documenten\Fontys\Prof 2\client-server socket\client\client\obj\Debug\client.exe
 C:\Users\Rik\OneDrive\Documenten\Fontys\Prof 2\client-server socket\client\client\obj\Debug\client.pdb
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\client\client\bin\Debug\client.exe.config
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\client\client\bin\Debug\client.exe
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\client\client\bin\Debug\client.pdb
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\client\client\obj\Debug\client.csprojAssemblyReference.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\client\client\obj\Debug\client.clientForm.resources
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\client\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\client\client\obj\Debug\client.csproj.GenerateResource.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\client\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\client\client\obj\Debug\client.exe
+C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\client\client\obj\Debug\client.pdb

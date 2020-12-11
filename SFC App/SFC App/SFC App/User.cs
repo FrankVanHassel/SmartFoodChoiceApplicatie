@@ -7,7 +7,7 @@ namespace SFC_App
     public class User
     {
 
-        public int id { get; }
+        public int id { get; set; }
 
         public int totalCO2 { get; set; }
 

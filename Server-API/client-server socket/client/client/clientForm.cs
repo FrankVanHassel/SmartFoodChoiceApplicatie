@@ -35,10 +35,17 @@ namespace client
             NetworkStream stream = client.GetStream();
             stream.Write(sendData, 0, sendData.Length);
 
+            
+
+
+
 
             // The 4 lines below are for receiving a message from the server, and then convert it to a string
             byte[] serverMessage = new byte[100];
             stream.Read(serverMessage, 0, serverMessage.Length);
+
+
+
             string serverMessageString = Encoding.ASCII.GetString(serverMessage);
             MessageBox.Show(serverMessageString);
 
