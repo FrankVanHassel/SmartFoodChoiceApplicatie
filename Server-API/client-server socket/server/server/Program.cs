@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Net;
 using System.Net.Sockets;
@@ -14,6 +15,7 @@ namespace server
             int port = Int32.Parse(portStr);
 
             ConnectionClass connection = new ConnectionClass();
+            DataHandler dataHandler = new DataHandler();
 
 
             // Set the IP address
@@ -43,14 +45,21 @@ namespace server
               
                 Console.WriteLine(clientMessage);
 
-                // Inside this if statement could be a message that contains data from the database
-                if (clientMessage.ToString() == "response")
-                {                    
-                    connection.sendData(client, server, "response back");
-                }
-                else
+                //// Inside this if statement could be a message that contains data from the database
+                //if (clientMessage == "response")
+                //{                    
+                //    connection.sendData(client, server, "response back");
+                //}
+                //else
+                //{
+                //    connection.sendData(client, server, "no response");
+                //}
+
+                List<string> dataList =  dataHandler.DataToList(clientMessage);
+
+                foreach (string i in dataList)
                 {
-                    connection.sendData(client, server, "no response");
+                    Console.WriteLine(i);
                 }
             }
         }

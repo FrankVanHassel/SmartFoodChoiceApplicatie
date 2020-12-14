@@ -30,14 +30,14 @@ namespace server
 
             foreach (byte b in receivedBuffer)
             {
-                // 00 equals null, this is impossible for the user to put in their message. 
+                // 00 equals null, this is impossible for the user to put in their message, but the empty part of the array will be filled with null. 
                 if (b.Equals(00))
                 {
                     break;
                 }
                 else
                 {
-                    // First complete the byte to a character, then to a string. Then append it in the message.
+                    // First convert the byte to a character, then to a string. Then append it in the message.
                     clientMessage.Append(Convert.ToChar(b).ToString());
                 }
             }
