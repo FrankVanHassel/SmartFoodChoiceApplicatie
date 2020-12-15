@@ -19,7 +19,7 @@ namespace server
 
 
             // Set the IP address
-            IPAddress serverIP = IPAddress.Parse("192.168.1.113");
+            IPAddress serverIP = IPAddress.Parse("145.93.144.80");
             TcpListener server = new TcpListener(serverIP, port);
             TcpClient client = default(TcpClient);
             
@@ -43,19 +43,11 @@ namespace server
 
                 string clientMessage = connection.readData(client, server);
               
-                Console.WriteLine(clientMessage);
-
-                //// Inside this if statement could be a message that contains data from the database
-                //if (clientMessage == "response")
-                //{                    
-                //    connection.sendData(client, server, "response back");
-                //}
-                //else
-                //{
-                //    connection.sendData(client, server, "no response");
-                //}
+                //Console.WriteLine(clientMessage);
 
                 List<string> dataList =  dataHandler.DataToList(clientMessage);
+
+                connection.sendData(client, server, "message from server");
 
                 foreach (string i in dataList)
                 {

@@ -16,7 +16,7 @@ namespace client
 {
     public partial class clientForm : Form
     {
-        string serverIP = "192.168.1.113";
+        string serverIP = "145.93.144.80";
         int port = 8080;
 
         public clientForm()
@@ -38,17 +38,19 @@ namespace client
             
 
 
+            
 
-
-            // The 4 lines below are for receiving a message from the server, and then convert it to a string
+            // The part below are for receiving a message from the server, and then convert it to a string
+            // The client must receive a message, otherwise the application will freeze :(
             byte[] serverMessage = new byte[100];
-            stream.Read(serverMessage, 0, serverMessage.Length);
 
-
-
-            string serverMessageString = Encoding.ASCII.GetString(serverMessage);
-            MessageBox.Show(serverMessageString);
-
+            do
+            {
+                stream.Read(serverMessage, 0, serverMessage.Length);
+                string serverMessageString = Encoding.ASCII.GetString(serverMessage);
+                MessageBox.Show(serverMessageString);
+            }
+            while (stream.DataAvailable);
 
             // Stop the connection
             stream.Close();
