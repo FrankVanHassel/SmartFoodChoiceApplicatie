@@ -50,5 +50,12 @@ namespace SFC_App.ViewModels
             changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
+
+        string data = "";
+        public string Data
+        {
+            get { return data; }
+            set { SetProperty(ref data, value); }
+        }
     }
 }
