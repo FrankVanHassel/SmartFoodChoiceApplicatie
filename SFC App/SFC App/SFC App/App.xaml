@@ -31,10 +31,12 @@
             
             <Style TargetType="Grid">
                 <Setter Property="BackgroundColor" Value="#56FF00"/>
+                <Setter Property="FontFamily" Value="franklin-gothic-atf, sans-serif"/>
             </Style>
 
             <Style TargetType="Label">
                 <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontFamily" Value="franklin-gothic-atf, sans-serif"/>
                 <Setter Property="TextColor" Value="Black"/>
             </Style>
         </ResourceDictionary>        

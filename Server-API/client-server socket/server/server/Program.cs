@@ -19,7 +19,7 @@ namespace server
 
 
             // Set the IP address
-            IPAddress serverIP = IPAddress.Parse("145.93.144.80");
+            IPAddress serverIP = IPAddress.Parse("192.168.174.189");    //IP from the ubuntu machine
             TcpListener server = new TcpListener(serverIP, port);
             TcpClient client = default(TcpClient);
             
