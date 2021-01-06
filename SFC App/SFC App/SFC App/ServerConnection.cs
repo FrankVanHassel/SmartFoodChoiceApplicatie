@@ -6,7 +6,7 @@ namespace SFC_App
 {
     public class ServerConnection
     {
-        private string serverIP = "192.168.174.189";    // The IP address from the ubuntu server: 192.168.174.189
+        private string serverIP = "192.168.1.113";    // The IP address from the ubuntu server: 192.168.174.189
         private int port = 8080;
         public string getDemo = "demotijd";
         string serverIP = "145.93.144.80";
