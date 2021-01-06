@@ -18,24 +18,3 @@ C:\Users\SKIKK\source\repos\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\ob
 C:\Users\SKIKK\source\repos\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\SFC App.dll
 C:\Users\SKIKK\source\repos\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\ref\SFC App.dll
 C:\Users\SKIKK\source\repos\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\SFC App.pdb
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\bin\Release\netstandard2.0\SFC App.deps.json
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\bin\Release\netstandard2.0\SFC App.dll
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\bin\Release\netstandard2.0\ref\SFC App.dll
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\bin\Release\netstandard2.0\SFC App.pdb
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\SFC App.csprojAssemblyReference.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\App.xaml.g.cs
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\AppShell.xaml.g.cs
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\Views\AboutPage.xaml.g.cs
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\Views\FavoritesPage.xaml.g.cs
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\Views\ItemsPage.xaml.g.cs
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\Views\LoginPage.xaml.g.cs
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\Views\NewItemPage.xaml.g.cs
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\Views\OverviewPage.xaml.g.cs
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\SFC App.AssemblyInfoInputs.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\SFC App.AssemblyInfo.cs
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\SFC App.csproj.CoreCompileInputs.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\XamlC.stamp
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\SFC App.dll
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\ref\SFC App.dll
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\SFC App.pdb

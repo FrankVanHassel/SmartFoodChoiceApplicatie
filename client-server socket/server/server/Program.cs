@@ -9,23 +9,18 @@ namespace server
 {
     public class Program
     {
-        
-
         static void Main(string[] args)
         {
-            //demo list
-            List<string> demoList = new List<string> { "tomaat", "Nutri: A", "23", "11" };
-
             Console.WriteLine("Enter port to use: ");
             string portStr = Console.ReadLine();           
             int port = Int32.Parse(portStr);
 
-            ClientConnection connection = new ClientConnection();
+            ConnectionClass connection = new ConnectionClass();
             DataHandler dataHandler = new DataHandler();
 
 
             // Set the IP address
-            IPAddress serverIP = IPAddress.Parse("192.168.1.113");    // The IP address from the ubuntu server: 192.168.174.189
+            IPAddress serverIP = IPAddress.Parse("192.168.174.189");    //IP from the ubuntu machine
             TcpListener server = new TcpListener(serverIP, port);
             TcpClient client = default(TcpClient);
             
@@ -53,16 +48,8 @@ namespace server
 
                 List<string> dataList =  dataHandler.DataToList(clientMessage);
 
-                if (clientMessage == "demotijd")
-                {
-                    connection.sendData(client, server, dataHandler.ListToData(demoList));
-                }
-                else
-                {
-                    connection.sendData(client, server, "request unclear");
-                }
+                connection.sendData(client, server, "message from server");
 
-                
                 foreach (string i in dataList)
                 {
                     Console.WriteLine(i);

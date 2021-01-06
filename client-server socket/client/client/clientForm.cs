@@ -42,7 +42,7 @@ namespace client
             
 
             // The part below are for receiving a message from the server, and then convert it to a string
-            // The client must receive a message, otherwise the application will freeze :(      (fixed this?)
+            // The client must receive a message, otherwise the application will freeze :(
             byte[] serverMessage = new byte[100];
 
             do

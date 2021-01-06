@@ -5,8 +5,6 @@ using System.Text;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using System.Windows.Input;
-using System.Net;
-using System.Net.Sockets;
 
 
 namespace SFC_App.ViewModels

@@ -6,50 +6,9 @@
              mc:Ignorable="d"
              x:Class="SFC_App.Views.LoginPage"
              Shell.NavBarIsVisible="False">
-
-
-
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-
-
-
-            <StackLayout>
-
-
-
-                <StackLayout Grid.Row="0" Padding="20" VerticalOptions="StartAndExpand">
-                    <Frame CornerRadius="10">
-                        <StackLayout>
-                            <Label Text="Username"/>
-                            <Entry Text="{Binding Username}" Placeholder="Username"/>
-                            <Label Text="Password"/>
-                            <Entry Text="{Binding Password}" IsPassword="True" Placeholder="Password"/>
-                        </StackLayout>
-                    </Frame>
-                </StackLayout>
-
-
-
-
-                <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-                    <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
-                </StackLayout>
-
-
-
-                <StackLayout Padding="20,0,20,0"  VerticalOptions="End">
-                    <Button  VerticalOptions="Center" Text="Geen account? Registreren" Command="{Binding RegisterCommand}" />
-                </StackLayout>
-
-            </StackLayout>
-
-
-        </Grid>
+        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

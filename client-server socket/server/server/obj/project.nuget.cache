@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nUOvEMiaULUVvMzxDhG9eQq6XI6WY+MzM0JyNQD5zfmSkQl7l6FjxGT94KlNEFCOIhN1OxW5Jlq457T26oBItw==",
+  "dgSpecHash": "wVEbYux37LbyEwdarvPqVCavsXOoH3Q/hvQ/Qq5JqASaZc5tQCpnxJy0qqZ6kKR3PojPhs3oU9frI7UhayQk0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\client-server socket\\server\\server\\server.csproj",
+  "projectFilePath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\Server-API\\client-server socket\\server\\server\\server.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

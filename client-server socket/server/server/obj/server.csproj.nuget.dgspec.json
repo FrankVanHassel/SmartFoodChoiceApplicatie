@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\client-server socket\\server\\server\\server.csproj": {}
+    "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\Server-API\\client-server socket\\server\\server\\server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\client-server socket\\server\\server\\server.csproj": {
+    "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\Server-API\\client-server socket\\server\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\client-server socket\\server\\server\\server.csproj",
+        "projectUniqueName": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\Server-API\\client-server socket\\server\\server\\server.csproj",
         "projectName": "server",
-        "projectPath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\client-server socket\\server\\server\\server.csproj",
+        "projectPath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\Server-API\\client-server socket\\server\\server\\server.csproj",
         "packagesPath": "C:\\Users\\rik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\client-server socket\\server\\server\\obj\\",
+        "outputPath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\Server-API\\client-server socket\\server\\server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
