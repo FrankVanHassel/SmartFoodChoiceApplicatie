@@ -16,8 +16,9 @@ namespace client
 {
     public partial class clientForm : Form
     {
-        string serverIP = "145.93.144.80";
-        int port = 8080;
+        //string serverIP = "145.93.144.80";
+        string serverIP = "192.168.1.113";//"192.168.174.189";
+        int port = 8081;
 
         public clientForm()
         {

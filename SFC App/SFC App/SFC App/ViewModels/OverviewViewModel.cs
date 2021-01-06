@@ -16,6 +16,7 @@ namespace SFC_App.ViewModels
         public OverviewViewModel()
         {
             Title = "Overview";
+            Data = "---";
 
 
             try
