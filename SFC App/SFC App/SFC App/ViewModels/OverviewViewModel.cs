@@ -5,6 +5,8 @@ using System.Text;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using System.Windows.Input;
+using System.Net;
+using System.Net.Sockets;
 
 
 namespace SFC_App.ViewModels
@@ -26,7 +28,7 @@ namespace SFC_App.ViewModels
                 Data = connection.ReceiveData(client, stream);
                 connection.EndConnection(client, stream);
             }
-            catch 
+            catch
             {
                 Data = "Not connected to server";
             }

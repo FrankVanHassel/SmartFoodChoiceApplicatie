@@ -16,7 +16,8 @@ namespace client
 {
     public partial class clientForm : Form
     {
-        string serverIP = "145.93.144.80";
+        //string serverIP = "145.93.144.80";
+        string serverIP = "192.168.1.113";//"192.168.174.189";
         int port = 8080;
 
         public clientForm()
@@ -41,7 +42,7 @@ namespace client
             
 
             // The part below are for receiving a message from the server, and then convert it to a string
-            // The client must receive a message, otherwise the application will freeze :(
+            // The client must receive a message, otherwise the application will freeze :(      (fixed this?)
             byte[] serverMessage = new byte[100];
 
             do

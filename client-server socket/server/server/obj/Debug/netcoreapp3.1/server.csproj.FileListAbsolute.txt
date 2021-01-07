@@ -24,16 +24,3 @@ C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\cl
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\server\server\obj\Debug\netcoreapp3.1\server.dll
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\server\server\obj\Debug\netcoreapp3.1\server.pdb
 C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\Server-API\client-server socket\server\server\obj\Debug\netcoreapp3.1\server.genruntimeconfig.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\bin\Debug\netcoreapp3.1\server.exe
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\bin\Debug\netcoreapp3.1\server.deps.json
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\bin\Debug\netcoreapp3.1\server.runtimeconfig.json
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\bin\Debug\netcoreapp3.1\server.runtimeconfig.dev.json
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\bin\Debug\netcoreapp3.1\server.dll
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\bin\Debug\netcoreapp3.1\server.pdb
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\obj\Debug\netcoreapp3.1\server.csprojAssemblyReference.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\obj\Debug\netcoreapp3.1\server.AssemblyInfoInputs.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\obj\Debug\netcoreapp3.1\server.AssemblyInfo.cs
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\obj\Debug\netcoreapp3.1\server.csproj.CoreCompileInputs.cache
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\obj\Debug\netcoreapp3.1\server.dll
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\obj\Debug\netcoreapp3.1\server.pdb
-C:\Users\rik\source\repos\FrankVanHassel\SmartFoodChoiceApplicatie\client-server socket\server\server\obj\Debug\netcoreapp3.1\server.genruntimeconfig.cache

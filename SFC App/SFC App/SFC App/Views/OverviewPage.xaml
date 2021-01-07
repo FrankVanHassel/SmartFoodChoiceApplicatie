@@ -12,11 +12,15 @@
 
 
     <ContentPage.Content>
-        
+
         <StackLayout>
             <Label Text="Chosen products overview."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="{Binding Data}" 
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

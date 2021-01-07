@@ -39,6 +39,13 @@ namespace SFC_App.ViewModels
             return true;
         }
 
+        string data = string.Empty;
+        public string Data
+        {
+            get { return data; }
+            set { SetProperty(ref data, value); }
+        }
+
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
