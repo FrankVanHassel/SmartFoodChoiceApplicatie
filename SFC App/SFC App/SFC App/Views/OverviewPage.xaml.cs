@@ -15,5 +15,6 @@ namespace SFC_App.Views
         {
             InitializeComponent();
         }
+
     }
 }

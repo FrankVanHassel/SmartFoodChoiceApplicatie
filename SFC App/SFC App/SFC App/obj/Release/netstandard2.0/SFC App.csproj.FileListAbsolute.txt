@@ -18,3 +18,4 @@ C:\Users\SKIKK\source\repos\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\ob
 C:\Users\SKIKK\source\repos\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\SFC App.dll
 C:\Users\SKIKK\source\repos\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\ref\SFC App.dll
 C:\Users\SKIKK\source\repos\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\SFC App.pdb
+C:\Users\SKIKK\source\repos\SmartFoodChoiceApplicatie\SFC App\SFC App\SFC App\obj\Release\netstandard2.0\SFC App.csprojAssemblyReference.cache

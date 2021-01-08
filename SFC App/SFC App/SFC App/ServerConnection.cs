@@ -8,10 +8,10 @@ namespace SFC_App
 {
     public class ServerConnection
     {
-        private string serverIP = "192.168.1.113";    // The IP address from the ubuntu server: 192.168.174.189
+        private string serverIP = "192.168.174.189";    // The IP address from the ubuntu server: 192.168.174.189
         private int port = 8080;
         public string getDemo = "demotijd";
-
+        private int connectiontries;
 
         public TcpClient CreateClient()
         {
@@ -19,9 +19,51 @@ namespace SFC_App
             return client;
         }
 
+        public void makeConnection(TcpClient client)
+        {
+            // if no connection is made retry
+            while (!client.Connected)
+            {
+                try
+                {
+                    NetworkStream stream = client.GetStream();
+                }
+                catch
+                {
+                    // wait for 5 seconds
+                    System.Threading.Thread.Sleep(5000);
+                    //Here check the number of attempts and if exceeded:
+                    if (connectiontries == 5)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        connectiontries++;
+                        
+                        continue;
+                    }
+                }
+            }
+            if(!client.Connected)
+            {
+                ViewModels.OverviewViewModel overwiewViewModel = new ViewModels.OverviewViewModel();
+                overwiewViewModel.ErrorMessage();
+            }
+        }
+
+        public void testing()
+        {
+            ViewModels.OverviewViewModel overwiewViewModel = new ViewModels.OverviewViewModel();
+            overwiewViewModel.ErrorMessage();
+        }
+
         public NetworkStream GetStream(TcpClient client)
         {
             NetworkStream stream = client.GetStream();
+            makeConnection(client);
+            testing();
+            // gives the stream back
             return stream;
         }
 
