@@ -7,8 +7,8 @@ using Xamarin.Forms;
 using System.Windows.Input;
 using System.Net;
 using System.Net.Sockets;
-using System.Threading;
-
+using System.Threading.Tasks;
+using System.Net.NetworkInformation;
 
 namespace SFC_App.ViewModels
 {
@@ -16,22 +16,36 @@ namespace SFC_App.ViewModels
     {
         public OverviewViewModel()
         {
-            Thread.Sleep(5000);
+            var current = Connectivity.NetworkAccess;
+
             Title = "Overview";
 
-            try
+            if (current == Xamarin.Essentials.NetworkAccess.Internet)
             {
                 ServerConnection connection = new ServerConnection();
                 TcpClient client = connection.CreateClient();
+                // make the connection to the server
                 NetworkStream stream = connection.GetStream(client);
-                
-                connection.SendRequest(connection.getDemo, client, stream);
-                Data = connection.ReceiveData(client, stream);
-                connection.EndConnection(client, stream);
+
+                if (!client.Connected)
+                {
+                    connection.MakeConnection(client);
+                }
+
+                try
+                {
+                    connection.SendRequest(connection.getDemo, client, stream);
+                    Data = connection.ReceiveData(client, stream);
+                    connection.EndConnection(client, stream);
+                }
+                catch
+                {
+                    Data = "Fout: Kan geen data ophalen van server.";
+                }
             }
-            catch
+            else
             {
-                Data = "Not connected to server";
+                ErrorMessage();
             }
         }
 

@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Text;
 using System.Net;
 using System.Net.Sockets;
+using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace SFC_App
 {
     public class ServerConnection
     {
-        private string serverIP = "192.168.174.189";    // The IP address from the ubuntu server: 192.168.174.189
+        private string serverIP = "192.168.173.190";    // The IP address from the ubuntu server: 192.168.173.190
         private int port = 8080;
         public string getDemo = "demotijd";
         private int connectiontries;
@@ -19,7 +21,7 @@ namespace SFC_App
             return client;
         }
 
-        public void makeConnection(TcpClient client)
+        public void MakeConnection(TcpClient client)
         {
             // if no connection is made retry
             while (!client.Connected)
@@ -30,8 +32,6 @@ namespace SFC_App
                 }
                 catch
                 {
-                    // wait for 5 seconds
-                    System.Threading.Thread.Sleep(5000);
                     //Here check the number of attempts and if exceeded:
                     if (connectiontries == 5)
                     {
@@ -39,20 +39,20 @@ namespace SFC_App
                     }
                     else
                     {
+                        // wait for 5 seconds
+                        Task.Delay(5000);
                         connectiontries++;
-                        
                         continue;
                     }
                 }
             }
             if(!client.Connected)
             {
-                ViewModels.OverviewViewModel overwiewViewModel = new ViewModels.OverviewViewModel();
-                overwiewViewModel.ErrorMessage();
+                Testing();
             }
         }
 
-        public void testing()
+        public void Testing()
         {
             ViewModels.OverviewViewModel overwiewViewModel = new ViewModels.OverviewViewModel();
             overwiewViewModel.ErrorMessage();
@@ -61,8 +61,6 @@ namespace SFC_App
         public NetworkStream GetStream(TcpClient client)
         {
             NetworkStream stream = client.GetStream();
-            makeConnection(client);
-            testing();
             // gives the stream back
             return stream;
         }

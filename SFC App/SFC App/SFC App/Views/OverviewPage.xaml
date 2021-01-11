@@ -5,12 +5,10 @@
              xmlns:vm="clr-namespace:SFC_App.ViewModels"
              xmlns:local="clr-namespace:SFC_App"
              Title="{Binding Title}">
-            
 
     <ContentPage.BindingContext>
         <vm:OverviewViewModel />
     </ContentPage.BindingContext>
-
 
     <ContentPage.Content>
 

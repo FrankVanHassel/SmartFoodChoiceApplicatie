@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace SFC_App.ViewModels
@@ -17,6 +18,18 @@ namespace SFC_App.ViewModels
         {
             get { return isBusy; }
             set { SetProperty(ref isBusy, value); }
+        }
+
+        public void LoadItems()
+        {
+            IsBusy = true;
+
+            for (int i = 0; i < 30; i++)
+            {
+                Task.Delay(100);
+            }
+
+            IsBusy = false;
         }
 
         string title = string.Empty;
