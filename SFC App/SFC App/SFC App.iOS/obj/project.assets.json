@@ -7904,24 +7904,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SKIKK\\.nuget\\packages\\": {},
+    "C:\\Users\\rik\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SKIKK\\source\\repos\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App.iOS\\SFC App.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App.iOS\\SFC App.iOS.csproj",
       "projectName": "SFC App.iOS",
-      "projectPath": "C:\\Users\\SKIKK\\source\\repos\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App.iOS\\SFC App.iOS.csproj",
-      "packagesPath": "C:\\Users\\SKIKK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SKIKK\\source\\repos\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App.iOS\\obj\\",
+      "projectPath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App.iOS\\SFC App.iOS.csproj",
+      "packagesPath": "C:\\Users\\rik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\SKIKK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -7935,8 +7935,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\SKIKK\\source\\repos\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App\\SFC App.csproj": {
-              "projectPath": "C:\\Users\\SKIKK\\source\\repos\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App\\SFC App.csproj"
+            "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App\\SFC App.csproj": {
+              "projectPath": "C:\\Users\\rik\\source\\repos\\FrankVanHassel\\SmartFoodChoiceApplicatie\\SFC App\\SFC App\\SFC App\\SFC App.csproj"
             }
           }
         }
