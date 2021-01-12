@@ -6,17 +6,116 @@
              xmlns:local="clr-namespace:SFC_App"
              Title="{Binding Title}">
 
+
+
     <ContentPage.BindingContext>
         <vm:FavoritesViewModel />
     </ContentPage.BindingContext>
 
 
+
+
     <ContentPage.Content>
 
-        <StackLayout>
-            <Label Text="Favorites"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+
+        <StackLayout BackgroundColor="#56FF00">
+            <Label Text="Favoriete Producten"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   FontSize="Title"
+                  Margin="10"/>
+
+
+
+
+
+
+            <Frame BorderColor="DarkSlateGray" Margin="10" HeightRequest="60" Padding="0">
+                <Grid Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" RowSpacing="0" BackgroundColor="White" Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2.5*" />
+                        <ColumnDefinition Width="2.5*" />
+                        <ColumnDefinition Width="2.5*" />
+                        <ColumnDefinition Width="2.5*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+
+
+
+                    </Grid.RowDefinitions>
+                    <Label Grid.Column="0" FontAttributes="Bold"  Text="Ster" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Label Grid.Column="1" FontAttributes="Bold" Text="Datum en tijd" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Label Grid.Column="2" FontAttributes="Bold" Text="Producten" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Label Grid.Column="3" FontAttributes="Bold" Text="CO2-uitstoot" VerticalOptions="Center" HorizontalOptions="Center" />
+
+
+
+
+
+
+
+                    <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand" />
+                    <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                    <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+
+
+
+
+
+
+
+                </Grid>
+            </Frame>
+
+
+
+            <!-- Hier komt ItemSource={Binding Data} te staan. En hopelijk werkt het dan. -->
+            <ListView SeparatorVisibility="None" SelectionMode="None" HasUnevenRows="False">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Padding="0" BorderColor="DarkSlateGray" Margin="10,0,10,0" >
+                                <Grid Padding="0" BackgroundColor="White" RowSpacing="0" Margin="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="2.5*"/>
+                                        <ColumnDefinition Width="2.5*"/>
+                                        <ColumnDefinition Width="2.5*"/>
+                                        <ColumnDefinition Width="2.5*"/>
+
+
+
+                                    </Grid.ColumnDefinitions>
+
+
+
+                                    <!-- Text={Binding Producten/Datum en tijd etc.} Komt hier te staan-->
+                                    <Label Margin="10,0,10,0" Text="Test" VerticalOptions="Center" Grid.Column="0"/>
+                                    <Label Margin="10,0,10,0" Text="Test" VerticalOptions="Center" Grid.Column="1"/>
+                                    <Label Margin="10,0,10,0" Text="Test" VerticalOptions="Center" Grid.Column="2"/>
+                                    <Label Margin="10,0,10,0" Text="Test" VerticalOptions="Center" Grid.Column="3"/>
+
+
+
+                                    <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                    <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                    <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                    <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="3" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+
+
+
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
