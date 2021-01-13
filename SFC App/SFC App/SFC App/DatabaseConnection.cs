@@ -6,13 +6,11 @@ using MySql.Data;
 using System.Net;
 using System.Net.Sockets;
 
-
-namespace server
+namespace SFC_App
 {
     class DatabaseConnection
     {
-
-        private string connectionString = "Server=localhost;Database=SFCAppDatabase;Uid=ftpuser;Pwd=ftpuser";
+        private string connectionString = "Server=192.168.173.190;Database=SFCAppDatabase;Uid=ftpuser;Pwd=ftpuser";
         public string ConnectionString
         {
             get { return connectionString; }
@@ -29,7 +27,7 @@ namespace server
 
             MySqlConnection DBConnection = new MySqlConnection(connectionString);
             DBConnection.Open();
-            string passwordDB = "no pass";
+            string passwordDB = "";
 
             try
             {
@@ -42,8 +40,9 @@ namespace server
                     passwordDB = reader.GetString("Password");
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
+                // Replace console.writeline with message to user
                 Console.WriteLine();
                 Console.WriteLine(ex);
                 Console.WriteLine();
@@ -79,7 +78,7 @@ namespace server
                     productList.Add(value);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine();
                 Console.WriteLine(ex);

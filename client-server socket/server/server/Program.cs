@@ -25,10 +25,11 @@ namespace server
 
 
             // Set the IP address
-            IPAddress serverIP = IPAddress.Parse("192.168.1.113");    // The IP address from the ubuntu server: 192.168.173.190
+            IPAddress serverIP = IPAddress.Parse("192.168.173.190");    // The IP address from the ubuntu server: 192.168.173.190
             TcpListener server = new TcpListener(serverIP, port);
             TcpClient client = default(TcpClient);
-            
+
+                    
 
             try
             {
@@ -53,15 +54,28 @@ namespace server
 
                 List<string> dataList =  dataHandler.DataToList(clientMessage);
 
-                if (clientMessage == "demotijd")
-                {
-                    connection.sendData(client, server, dataHandler.ListToData(demoList));
-                }
-                else
-                {
-                    connection.sendData(client, server, "request unclear");
-                }
+                DatabaseConnection db = new DatabaseConnection();
 
+                switch (clientMessage)
+                {
+                    
+                    case "demotijd":
+                        string testEmail = "danny.denouden@student.fontys.nl";
+                        string password = db.GetUserPwd(testEmail);
+                        connection.sendData(client, server, password);
+                        break;
+
+                    case "allProducts":
+                        List<string> allProducts = db.GetAllProductData();
+                        DataHandler dh = new DataHandler();
+                        string allProductsString = dh.ListToData(allProducts);
+                        connection.sendData(client, server, allProductsString);
+                        break;
+
+                    default:
+                        connection.sendData(client, server, "request unclear");
+                        break;
+                }
                 
                 foreach (string i in dataList)
                 {
