@@ -10,11 +10,12 @@ namespace SFC_App
 {
     class DatabaseConnection
     {
-        private string connectionString = "Server=192.168.173.190;Database=SFCAppDatabase;Uid=ftpuser;Pwd=ftpuser";
+        private string connectionString = "Data Source=192.168.173.190,3306;Database=SFCAppDatabase;Uid=ftpuser;Pwd=ftpuser";
         public string ConnectionString
         {
             get { return connectionString; }
         }
+
 
 
         /// <summary>
@@ -43,9 +44,7 @@ namespace SFC_App
             catch (Exception ex)
             {
                 // Replace console.writeline with message to user
-                Console.WriteLine();
-                Console.WriteLine(ex);
-                Console.WriteLine();
+                passwordDB = "no password received";
             }
             finally
             {
@@ -59,7 +58,10 @@ namespace SFC_App
         }
 
 
-
+        /// <summary>
+        /// Gets the data from all products
+        /// </summary>
+        /// <returns>list with all product data</returns>
         public List<string> GetAllProductData()
         {
             List<string> productList = new List<string>();
@@ -74,15 +76,18 @@ namespace SFC_App
 
                 while (reader.Read())
                 {
-                    string value = reader.GetString("Password");
+                    string value = "";
+                    for (int i = 0; i < 17; i++)        // 17 is the number of coulmns in the database
+                    {
+                        value += reader.GetString(i);
+                        value += " | ";
+                    }
                     productList.Add(value);
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                Console.WriteLine();
-                Console.WriteLine(ex);
-                Console.WriteLine();
+                productList.Add("nothing received");
             }
             finally
             {
@@ -93,6 +98,48 @@ namespace SFC_App
             }
 
             return productList;
+        }
+
+
+        /// <summary>
+        /// Gets the data of a product
+        /// </summary>
+        /// <param name="productID">The ID of the requested product</param>
+        /// <returns>string containing all data of the product</returns>
+        public string GetProduct(int productID)
+        {
+            string product = "";
+            MySqlConnection DBConnection = new MySqlConnection(connectionString);
+            DBConnection.Open();
+
+            try
+            {
+                string commandString = $"SELECT * FROM Products WHERE ProductID='{productID}'";
+                MySqlCommand command = new MySqlCommand(commandString, DBConnection);
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    for (int i = 0; i < 17; i++)
+                    {
+                        product += reader.GetString(i);
+                        product += " | ";
+                    }
+                }
+            }
+            catch
+            {
+                product = "failed";
+            }
+            finally
+            {
+                if (DBConnection.State == System.Data.ConnectionState.Open)
+                {
+                    DBConnection.Close();
+                }
+            }
+
+            return product;
         }
     }
 }

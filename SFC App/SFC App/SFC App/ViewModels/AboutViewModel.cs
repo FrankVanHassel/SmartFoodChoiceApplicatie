@@ -7,9 +7,11 @@ namespace SFC_App.ViewModels
 {
     public class AboutViewModel : BaseViewModel
     {
-        public AboutViewModel()
+
+        private string databaseTest;
+        public string DatabaseTest
         {
-            Title = "Smart Food Choice";
+            get { return databaseTest; }
         }
 
         private string appDescription = "Welkom bij de Smart Food Choice app! \nKies je producten en kijk hoeveel CO2 je uitstoot.";
@@ -17,5 +19,22 @@ namespace SFC_App.ViewModels
         {
             get { return appDescription; }
         }
+
+
+        public AboutViewModel()
+        {
+            Title = "Smart Food Choice";
+        }
+       
+
+        protected async void OnAppearing()
+        {
+            DatabaseConnection DBC = new DatabaseConnection();
+            string passwrd = DBC.GetUserPwd("admin@admin.admin");
+            databaseTest = passwrd;
+        }
+        
+        
+        
     }
 }
