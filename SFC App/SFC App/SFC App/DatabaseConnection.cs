@@ -41,9 +41,8 @@ namespace SFC_App
                     passwordDB = reader.GetString("Password");
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                // Replace console.writeline with message to user
                 passwordDB = "no password received";
             }
             finally
