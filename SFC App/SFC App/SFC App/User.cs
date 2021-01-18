@@ -10,21 +10,30 @@ namespace SFC_App
         public int id { get; }
 
         public int totalCO2 { get; set; }
-
         public string username { get; set; }
         public string email { get; set; }
         public string password { get; set; }
+        public string favorites { get; set; }
 
 
-        public User(int Id, int TotalCO2, string Username, string Email, string Password)
+        public User(int Id, int TotalCO2, string Username, string Email, string Password, string Favorites)
         {
             id = Id;
             totalCO2 = TotalCO2;
             username = Username;
             email = Email;
             password = Password;
+            favorites = Favorites;
         }
         
+
+
+        // =================================================
+        // The functions below may not be needed anymore!!!!
+        // =================================================
+
+
+
 
         // Makes it possible to change the username, returns false if name change failed. 
         public bool ChangeUsername(string newUsername, string newUsernameConfirm, string userPassword)

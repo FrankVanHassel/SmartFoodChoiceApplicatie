@@ -140,5 +140,40 @@ namespace SFC_App
 
             return product;
         }
+
+
+
+        public double GetCO2Usage(int userId)
+        {
+            MySqlConnection DBConnection = new MySqlConnection(connectionString);
+            DBConnection.Open();
+
+            double totalCO2 = 0;
+
+            try
+            {
+                string commandString = $"SELECT TotalCO2 FROM Login WHERE UserID='{userId}'";
+                MySqlCommand command = new MySqlCommand(commandString, DBConnection);
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    totalCO2 = reader.GetInt32("TotalCO2");
+                }
+            }
+            finally
+            {
+                if (DBConnection.State == System.Data.ConnectionState.Open)
+                {
+                    DBConnection.Close();
+                }
+            }
+
+            return totalCO2;
+        }
+
+
+
+        
     }
 }
