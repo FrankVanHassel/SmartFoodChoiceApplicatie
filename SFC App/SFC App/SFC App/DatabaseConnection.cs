@@ -174,6 +174,30 @@ namespace SFC_App
 
 
 
-        
+        public void AddCO2Usage(int userId, double newCO2Usage)
+        {
+            MySqlConnection DBConnection = new MySqlConnection(connectionString);
+            DBConnection.Open();
+
+            // Store the total CO2 usage thus far 
+            double oldCO2Usage = GetCO2Usage(userId);
+
+
+            try
+            {
+                double newTotalCO2Usage = oldCO2Usage + newCO2Usage;
+
+                // The new total CO2 usage is the old total + the new CO2 usage.
+                string commandString = $"UPDATE Login SET TotalCO2={newTotalCO2Usage} WHERE UserID={userId}";
+                MySqlCommand command = new MySqlCommand(commandString, DBConnection);
+            }
+            finally
+            {
+                if (DBConnection.State == System.Data.ConnectionState.Open)
+                {
+                    DBConnection.Close();
+                }
+            }
+        }
     }
 }
