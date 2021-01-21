@@ -13,6 +13,7 @@ namespace SFC_App.ViewModels
         public FavoritesViewModel()
         {
             Title = "Favorites";
+
         }
     }
 }

@@ -10,23 +10,39 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using System.Collections.ObjectModel;
+
+
 namespace SFC_App.Views
 {
     public partial class ItemsPage : ContentPage
     {
-        ItemsViewModel _viewModel;
+        //ItemsViewModel _viewModel;
 
+        public ObservableCollection<Items> ListItems { get; set; } 
         public ItemsPage()
         {
             InitializeComponent();
-
-            BindingContext = _viewModel = new ItemsViewModel();
+            ListItems = new ObservableCollection<Items> 
+            {
+                new Items{ Name="ItemList"}
+            };
+            BindingContext = this;
+            //BindingContext = _viewModel = new ItemsViewModel();
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            _viewModel.OnAppearing();
+            //  _viewModel.OnAppearing();
         }
+    }
+
+    
+    public class Items
+    {
+        public string ImgIcon { get; set; }
+
+        public string Name { get; set; }
     }
 }

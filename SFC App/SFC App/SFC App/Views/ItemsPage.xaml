@@ -1,46 +1,237 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
              x:Class="SFC_App.Views.ItemsPage"
              Title="{Binding Title}"
-             xmlns:local="clr-namespace:SFC_App.ViewModels"  
+                
+              xmlns:local="clr-namespace:SFC_App"
              xmlns:model="clr-namespace:SFC_App.Models"  
              x:Name="BrowseItemsPage">
 
-    <ContentPage.ToolbarItems>
+
+
+    <!-- <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />
-    </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>-->
     <!--
       x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
       https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
     -->
-    <RefreshView x:DataType="local:ItemsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
-        <CollectionView x:Name="ItemsListView" Background="#56FF00"
-                ItemsSource="{Binding Items}"
-                SelectionMode="None">
-            <CollectionView.ItemTemplate>
+
+
+
+
+    <!--  BackgroundColor="#56FF00" -->
+    <StackLayout BackgroundColor="#56FF00">
+        <Label Text="Maak hier uw lijstje:"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   FontSize="Title"
+                  Margin="10"/>
+
+
+
+        <ListView ItemsSource="{Binding ListItems}"  HasUnevenRows="True" >
+            <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="10" x:DataType="model:Item">
-                        <Label Text="{Binding Text}" 
-                            LineBreakMode="NoWrap" 
-                            Style="{DynamicResource ListItemTextStyle}" 
-                            FontSize="17" 
-                            TextColor="#1B1E2D"/>
-                        <Label Text="{Binding Description}" 
-                            LineBreakMode="NoWrap"
-                            Style="{DynamicResource ListItemDetailTextStyle}"
-                            FontSize="14" 
-                            TextColor="#1B1E2D"/>
-                        <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer 
-                                NumberOfTapsRequired="1"
-                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:ItemsViewModel}}, Path=ItemTapped}"		
-                                CommandParameter="{Binding .}">
-                            </TapGestureRecognizer>
-                        </StackLayout.GestureRecognizers>
-                    </StackLayout>
+                    <ViewCell>
+
+
+
+                        <Grid Padding="4" Margin="4">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="auto"></RowDefinition>
+
+
+
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+
+
+
+                            </Grid.ColumnDefinitions>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" HasShadow="True" Padding="0" BackgroundColor="White"  Margin="10" CornerRadius="10" >
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+
+
+
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.salad.jpg}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="salade" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="0" Grid.Column="1" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10" >
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+
+
+
+                                    <Image  Source="{local:ImageResource SFC_App.Images.biefstuk.jpg}" HorizontalOptions="Center" VerticalOptions="Center"></Image>
+                                    <Label VerticalOptions="Center" Text="biefstuk" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="1" Grid.Column="0" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.brocolli.png}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="brocolli" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="1" Grid.Column="1" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.burgerr.jpg}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="hamburger" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame IsClippedToBounds="True" Grid.Row="2" Grid.Column="0" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.fries.jpg}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="patat" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="2" Grid.Column="1" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.garnalen.jpg}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="garnaal" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="3" Grid.Column="0" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.kaas.jpg}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="kaas" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="3" Grid.Column="1" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.kip.png}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="kip" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="4" Grid.Column="0" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.lasagne.jpg}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="lasagne" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="4" Grid.Column="1" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.kiwi.jpg}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="kiwi" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame IsClippedToBounds="True" Grid.Row="5" Grid.Column="0" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.paprika.png}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="paprika" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="5" Grid.Column="1" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.piza.jpg}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="pizza" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="6" Grid.Column="0" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.snicker.png}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="snickers" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="6" Grid.Column="1" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.sushi.png}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="sushi" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+
+
+
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="7" Grid.Column="0" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.twix-bar1.jpg}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="twix" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+
+
+
+                            </Frame>
+
+
+
+                            <Frame IsClippedToBounds="True" Grid.Row="7" Grid.Column="1" HasShadow="True" Padding="0" BackgroundColor="White" Margin="10" CornerRadius="10">
+                                <StackLayout>
+                                    <BoxView VerticalOptions="Center" HeightRequest="90" WidthRequest="6"></BoxView>
+                                    <Image  Source="{ local:ImageResource SFC_App.Images.tomaat.png}" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100" WidthRequest="100"></Image>
+                                    <Label VerticalOptions="Center" Text="tomaat" HorizontalOptions="Center" FontSize="Medium"></Label>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </ViewCell>
                 </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </RefreshView>
+
+
+
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

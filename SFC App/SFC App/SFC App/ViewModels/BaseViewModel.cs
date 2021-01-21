@@ -59,6 +59,13 @@ namespace SFC_App.ViewModels
             set { SetProperty(ref data, value); }
         }
 
+        List<string> testList = new List<string>();
+        public List<string> TestList
+        {
+            get { return testList; }
+            set { SetProperty(ref testList, value); }
+        }
+
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string propertyName = "")

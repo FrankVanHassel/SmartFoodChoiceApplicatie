@@ -72,7 +72,7 @@
 
 
             <!-- Hier komt ItemSource={Binding Data} te staan. En hopelijk werkt het dan. -->
-            <ListView SeparatorVisibility="None" SelectionMode="None" HasUnevenRows="False">
+            <ListView ItemsSource="{Binding TestList}" SeparatorVisibility="None" SelectionMode="None" HasUnevenRows="False">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

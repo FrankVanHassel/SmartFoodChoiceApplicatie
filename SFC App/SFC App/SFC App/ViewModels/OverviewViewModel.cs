@@ -20,6 +20,8 @@ namespace SFC_App.ViewModels
 
             Title = "Overview";
 
+            TestList = new List<string> { "qqq", "www", "eee", "rrr"};
+
             if (current == Xamarin.Essentials.NetworkAccess.Internet)
             {
                 ServerConnection connection = new ServerConnection();

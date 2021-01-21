@@ -7,12 +7,66 @@
 
   <ItemGroup>
     <None Remove="Images\banaan-vierkant.jpg" />
+    <None Remove="Images\banaan.jpg" />
     <None Remove="Images\banaantime.png" />
+    <None Remove="Images\biefstuk.jpg" />
+    <None Remove="Images\brocolli.png" />
+    <None Remove="Images\burgerr.jpg" />
+    <None Remove="Images\fries.jpg" />
+    <None Remove="Images\garnalen.jpg" />
+    <None Remove="Images\happy.png" />
+    <None Remove="Images\kaas.jpg" />
+    <None Remove="Images\kip.png" />
+    <None Remove="Images\kip2.png" />
+    <None Remove="Images\kiwi.jpg" />
+    <None Remove="Images\lasagne.jpg" />
+    <None Remove="Images\logo.jpg" />
+    <None Remove="Images\logo.png" />
+    <None Remove="Images\neutral.png" />
+    <None Remove="Images\paprika.png" />
+    <None Remove="Images\piza.jpg" />
+    <None Remove="Images\sad.png" />
+    <None Remove="Images\salad.jpg" />
+    <None Remove="Images\smartfoodchoice.jpg" />
+    <None Remove="Images\smartfoodchoice.png" />
+    <None Remove="Images\smartfoodchoicelogo.ico" />
+    <None Remove="Images\snicker.png" />
+    <None Remove="Images\sushi.png" />
+    <None Remove="Images\tomaat.png" />
+    <None Remove="Images\twix-bar1.jpg" />
+    <None Remove="Images\vegburger.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Images\banaan-vierkant.jpg" />
+    <EmbeddedResource Include="Images\banaan.jpg" />
     <EmbeddedResource Include="Images\banaantime.png" />
+    <EmbeddedResource Include="Images\biefstuk.jpg" />
+    <EmbeddedResource Include="Images\brocolli.png" />
+    <EmbeddedResource Include="Images\burgerr.jpg" />
+    <EmbeddedResource Include="Images\fries.jpg" />
+    <EmbeddedResource Include="Images\garnalen.jpg" />
+    <EmbeddedResource Include="Images\happy.png" />
+    <EmbeddedResource Include="Images\kaas.jpg" />
+    <EmbeddedResource Include="Images\kip.png" />
+    <EmbeddedResource Include="Images\kip2.png" />
+    <EmbeddedResource Include="Images\kiwi.jpg" />
+    <EmbeddedResource Include="Images\lasagne.jpg" />
+    <EmbeddedResource Include="Images\logo.jpg" />
+    <EmbeddedResource Include="Images\logo.png" />
+    <EmbeddedResource Include="Images\neutral.png" />
+    <EmbeddedResource Include="Images\paprika.png" />
+    <EmbeddedResource Include="Images\piza.jpg" />
+    <EmbeddedResource Include="Images\sad.png" />
+    <EmbeddedResource Include="Images\salad.jpg" />
+    <EmbeddedResource Include="Images\smartfoodchoice.jpg" />
+    <EmbeddedResource Include="Images\smartfoodchoice.png" />
+    <EmbeddedResource Include="Images\smartfoodchoicelogo.ico" />
+    <EmbeddedResource Include="Images\snicker.png" />
+    <EmbeddedResource Include="Images\sushi.png" />
+    <EmbeddedResource Include="Images\tomaat.png" />
+    <EmbeddedResource Include="Images\twix-bar1.jpg" />
+    <EmbeddedResource Include="Images\vegburger.jpg" />
   </ItemGroup>
 
   <ItemGroup>

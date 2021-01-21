@@ -28,9 +28,6 @@
 
 
 
-
-
-
             <Frame BorderColor="DarkSlateGray" Margin="10" HeightRequest="60" Padding="0">
                 <Grid Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" RowSpacing="0" BackgroundColor="White" Margin="5">
                     <Grid.ColumnDefinitions>
@@ -50,32 +47,33 @@
 
 
 
-
-
-
-
-
-
                     <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand" />
                     <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
                     <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
-
-
-
-
-
-
-
 
 
                 </Grid>
             </Frame>
 
 
-
+            <TableView>
+                <TableRoot>
+                    <TableSection></TableSection>
+                </TableRoot>
+            </TableView>
+            
+            
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate></DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            
+            
             <!-- Hier komt ItemSource={Binding Data} te staan.  -->
             <ListView SeparatorVisibility="None" SelectionMode="None" HasUnevenRows="False">
-                <ListView.ItemTemplate>
+                <ListView.ItemTemplate ItemSource="{Binding TestList}">
                     <DataTemplate>
                         <ViewCell>
                             <Frame Padding="0" BorderColor="DarkSlateGray" Margin="10,0,10,0" >
@@ -85,6 +83,7 @@
                                         <ColumnDefinition Width="2.5*"/>
                                         <ColumnDefinition Width="2.5*"/>
                                         <ColumnDefinition Width="2.5*"/>
+                                        
 
 
 
